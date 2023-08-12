@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Описание проекта">
+    <title>LifeTour - организация походов в горы</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  </head>
+  <body class="body">
+    <div class="content">
+      <header class="main-header">
+        <div class="container">
+          <a class="main-header__logo" href="index.html">
+            <svg role="img" width="205" height="62" aria-label="Логотип компании Лайфтур.">
+              <use xlink:href="img/icons/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <nav class="page-nav page-nav--closed page-nav--nojs">
+            <button class="page-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
+            </button>
+            <ul class="nav-list page-nav__list">
+              <li class="nav-list__item"><a class="nav-list__link" href="#">Туры</a></li>
+              <li class="nav-list__item"><a class="nav-list__link"  href="#">Обучение</a></li>
+              <li class="nav-list__item"><a class="nav-list__link" href="#">О нас</a></li>
+              <li class="nav-list__item"><a class="nav-list__link" href="#">Отзывы</a></li>
+              <li class="nav-list__item"><a class="nav-list__link" href="#">Фотографии</a></li>
+              <li class="nav-list__item"><a class="nav-list__link" href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <p class="main-header__item">
+            <a class="main-header__phone" href="tel:+7(800)7253232">8 800 725 32 32</a>
+          </p>
+        </div>
+      </header>
+      <main>
+        <section class="intro">
+          <div class="container">
+            <h1>Тестовая страница.</h1>
+            <p>На данной странице показан пример модальных окон.</p>
+            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
+            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
+            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="container"></div>
+      </footer>
+    </div>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

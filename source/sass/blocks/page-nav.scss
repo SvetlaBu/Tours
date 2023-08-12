@@ -1,21 +1,19 @@
 .page-nav {
   padding: 0;
   position: relative;
-  z-index: 2;
+  align-self: center;
 
   @include vp-1199 {
-    padding: 20px 10px 14px 15px;
     background-color: transparent;
   }
 }
 
-.page-nav--closed .page-nav__list {
-  display: grid;
+.page-nav__list {
+  display: block;
 }
 
 .page-nav--opened {
-  position: absolute;
-  width: 320px;
+  width: 100%;
   top: 0;
   margin-top: 0;
 
@@ -28,10 +26,8 @@
 
 .page-nav--nojs .page-nav__list,
 .page-nav--opened .page-nav__list {
-  display: grid;
-
   @include vp-1199 {
-    display: block;
+    display: grid;
   }
 }
 
@@ -44,7 +40,7 @@
   outline: none;
   padding: 20px 20px;
   box-sizing: border-box;
-  background-color: transparent;
+  background-color: $color-default-black;
 
   &:hover,
   &:focus {
@@ -105,14 +101,7 @@
 }
 
 .page-nav--nojs {
-  margin-top: 96px;
-
-  @include vp-1199 {
-    margin: 0;
-  }
-}
-
-.page-nav--nojs ~ .welcome,
-.page-nav--nojs ~ .page-header__wrap {
-  margin-top: 0;
+  // @include vp-1199 {
+  //   margin-top: 36px;
+  // }
 }

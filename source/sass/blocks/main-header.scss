@@ -14,10 +14,16 @@
     @include vp-1199 {
       padding: calc(30/768*100%) calc(45/768*100%);
       grid-template-columns: calc(133/678*100%) calc(144/678*100%) calc(136/678*100%);
-      column-gap: calc(141/678*100%);
+      column-gap: calc(133/678*100%);
       align-content: start;
-      grid-auto-rows: 4.1vw;
       font-size: 2.1vw;
+    }
+
+    @include vp-767 {
+      padding: calc(15/320*100%);
+      grid-template-columns: calc(124/290*100%) calc(112/290*100%);
+      column-gap: calc(126/678*100%);
+      font-size: 4.3vw;
     }
   }
 
@@ -28,7 +34,7 @@
   nav {
     @include vp-1199 {
       grid-column: 1/2;
-      grid-row: span 12;
+      grid-row: 1/-1;
     }
   }
 }
@@ -36,22 +42,55 @@
 .main-header__logo {
   @include vp-1199 {
     grid-column: 2/3;
-    grid-row: span 2;
+    grid-row: 1/-1;
+    justify-self: end;
+  }
+
+  @include vp-767 {
+    grid-row: 1/2;
   }
 
   svg {
     width: 100%;
+
+    @include vp-1199 {
+      height: 42px;
+    }
+
+    @include vp-1199 {
+      height: 36px;
+    }
   }
 }
 
 .main-header__phone {
-  font-size: 1.237vw;
+  font-size: 1.23vw;
   line-height: 1.5;
   font-weight: 600;
 
   @include vp-1199 {
     grid-column: 3/-1;
+    grid-row: 1/-1;
+    margin: 0;
+    text-align: start;
     font-size: 2.1vw;
-    grid-row: span 2;
+  }
+
+  @include vp-767 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    font-size: 4.3vw;
+    margin-top: 30px;
+    justify-self: end;
+  }
+
+  a {
+    @include vp-1199 {
+      margin: 10px 0 0 6px;
+    }
+
+    @include vp-767 {
+      margin: 10px 0 0 2px;
+    }
   }
 }

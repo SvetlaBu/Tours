@@ -6,6 +6,7 @@ const toggleMenu = () => {
   navMain.classList.remove('page-nav--nojs');
 
   navToggle.addEventListener('click', function () {
+    header.classList.toggle('main-header--opened');
     if (navMain.classList.contains('page-nav--closed')) {
       navMain.classList.remove('page-nav--closed');
       navMain.classList.add('page-nav--opened');
@@ -13,7 +14,6 @@ const toggleMenu = () => {
       navMain.classList.add('page-nav--closed');
       navMain.classList.remove('page-nav--opened');
     }
-    header.classList.toggle('main-header--opened');
   });
 };
 

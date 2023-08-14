@@ -1,4 +1,11 @@
 .main-header {
+  &--opened {
+    a,
+    nav {
+      color: $color-default-white;
+    }
+  }
+
   .container {
     position: absolute;
     width: 100%;
@@ -57,6 +64,21 @@
 
   a {
     display: block;
+
+    &:hover,
+    &:focus-visible,
+    &:focus {
+      color: #1c3374;
+    }
+
+    &:active {
+      color: $color-navy-blue;
+    }
+
+    &:disabled {
+      color: $color-navy-blue;
+      opacity: 0.1;
+    }
   }
 
   nav {
@@ -71,15 +93,14 @@
   &:hover,
   &:focus-visible,
   &:focus {
-    color: #1c3374;
+    opacity: 0.7;
   }
 
   &:active {
-    color: $color-navy-blue;
+    opacity: 1;
   }
 
   &:disabled {
-    color: $color-navy-blue;
     opacity: 0.1;
   }
 

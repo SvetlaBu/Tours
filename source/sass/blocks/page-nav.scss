@@ -10,6 +10,14 @@
 
 .page-nav__list {
   display: block;
+
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.page-nav--closed > .page-nav__list {
+  display: none;
 }
 
 .page-nav--opened {

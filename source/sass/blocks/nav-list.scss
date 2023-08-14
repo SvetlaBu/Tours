@@ -6,20 +6,7 @@
   width: 100%;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: calc(31/577*100%);
-
-  @include vp-1199 {
-    flex-direction: column;
-    justify-content: start;
-    row-gap: 2.2vw;
-    text-transform: uppercase;
-    margin-top: 92px;
-  }
-
-  @include vp-767 {
-    row-gap: 6.9vw;
-    margin-top: 85px;
-  }
+  gap: calc(16/577*100%);
 }
 
 
@@ -28,52 +15,35 @@
   line-height: 1.5;
   text-align: center;
   font-weight: 400;
-
-  @include vp-1199 {
-    font-weight: 700;
-    text-align: start;
-    box-sizing: border-box;
-  }
-
-  @include vp-767 {
-    line-height: 1;
-    letter-spacing: 0.9px;
-  }
 }
 
 .nav-list__link {
   appearance: none;
+  outline: none;
   text-decoration: none;
   display: block;
   margin: 0 auto;
-  padding: 0;
+  padding: 2px 6px;
+  border-bottom: 1px solid;
+  border-color: transparent;
 
   &:hover {
-    background-color: #669ec0;
     outline: none;
+    outline-offset: -1px;
+    border-bottom: 1px solid;
+    border-color: inherit;
   }
 
-  &:active {
-    background-color: #5496bd;
-    color: rgba(255, 255, 255, 0.3);
-    appearance: none;
+  &:focus,
+  &:focus-visible {
+    outline: none;
+    text-decoration: none;
+    outline-offset: -1px;
+    border: 1px solid;
+    border-color: inherit;
   }
 
-  @include vp-1439 {
-    color: $color-default-black;
-    padding: 0;
-    width: auto;
-    margin: auto;
-
-    &:hover {
-      background-color: $color-default-white;
-      color: #81b3d2;
-    }
-
-    &:active {
-      background-color: $color-default-white;
-      color: $color-default-black;
-      opacity: 0.3;
-    }
+  &:disabled {
+    opacity: 0.5;
   }
 }

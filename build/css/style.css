@@ -2219,7 +2219,7 @@ button,
 
 .hero__button {
   position: absolute;
-  padding: 2vw;
+  padding: 1vw 1vw 1vw 1.2vw;
   background-color: transparent;
   border-radius: 50%;
   border: 2px solid #ffffff;

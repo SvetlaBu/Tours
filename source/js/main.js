@@ -2,6 +2,9 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {toggleMenu} from './modules/modals/menu';
+import {carouselHero} from './vendor/carousel';
+import {findVideos} from './modules/video';
+
 
 // ---------------------------------
 
@@ -13,8 +16,9 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
 
   // Modules
-
+  carouselHero();
   toggleMenu();
+  findVideos();
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'

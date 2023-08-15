@@ -1,8 +1,11 @@
 .main-header {
+  color: $color-default-white;
+  z-index: 2;
+
   &--opened {
     a,
     nav {
-      color: $color-default-white;
+      color: $color-default-black;
     }
   }
 

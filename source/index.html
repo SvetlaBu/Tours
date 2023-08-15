@@ -38,6 +38,90 @@
         </div>
       </header>
       <main>
+        <section class="hero">
+          <h1 class="visually-hidden">Уникальные маршруты путешествий по горам России</h1>
+          <div class="hero__container">
+            <div class="hero__wrapper">
+              <div class="hero__slider swiper" id="carousel" pagination="true">
+                <div class="hero__group swiper-wrapper">
+                  <section class="hero__item hero__item--1 swiper-slide" tabindex="0">
+                    <div class="hero__desc">
+                      <h2 class="hero__title">
+                        Захватывающие вершины&nbsp;Кавказа
+                      </h2>
+                      <p>В&nbsp;сопровождении опытных гидов вы&nbsp;пройдете через потрясающие ландшафты и&nbsp;совершите восход на&nbsp;вершину горы Чегет.</p>
+                      <a class="hero__view" href="">Смотреть тур</a>
+                      <div class="hero__details">
+                        <p class="hero__info">6 дней/5 ночей</p>
+                        <p class="hero__info hero__info--level">Высокая сложность</p>
+                      </div>
+                    </div>
+                    <div class="hero__video" id="video">
+                      <div class="hero__link" id="video-on">
+                        <picture>
+                          <source type="image/webp" srcset="img/video-poster.webp, img/video-poster@2x.webp 2x">
+                          <img width="482" height="317" src="img/video-poster.jpg" srcset="img/video-poster@2x.jpg" alt="Видео о путешествии.">
+                        </picture>
+                        <button class="btn hero__button" id="video-button" aria-label="Кнопка включения видео.">
+                          <svg width="15" height="20">
+                            <use xlink:href="img/sprite/sprite.svg#play"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="hero__item hero__item--2 swiper-slide" tabindex="0">
+                    <div class="hero__desc">
+                      <h2 class="hero__title">
+                        Невероятная природа Камчатки
+                      </h2>
+                      <p>Незабываемое приключение, во&nbsp;время которого вы&nbsp;отправитесь в&nbsp;путешествие по&nbsp;одному из&nbsp;самых нетронутых уголков дикой природы в&nbsp;мире.</p>
+                      <a class="hero__view" href="">Смотреть тур</a>
+                      <div class="hero__details">
+                        <p class="hero__info">9 дней/10 ночей</p>
+                        <p class="hero__info hero__info--level">Средняя сложность</p>
+                      </div>
+                    </div>
+                    <div class="hero__pic">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1200px)" srcset="img/kamchatka-cards-desktop.webp, img/kamchatka-cards-desktop@2x.webp 2x">
+                        <source media="(min-width: 1200px)" srcset="img/kamchatka-cards-desktop.png, img/kamchatka-cards-desktop@2x.jpg 2x">
+                        <source type="image/webp" srcset="img/kamchatka-cards-tablet.webp, img/kamchatka-cards-tablet@2x.webp 2x">
+                        <img width="410" height="459" src="img/kamchatka-cards-tablet.png" srcset="img/kamchatka-cards-tablet@2x.jpg" alt="Фото природы Камчатки.">
+                      </picture>
+                    </div>
+                  </section>
+                  <section class="hero__item hero__item--3 swiper-slide" tabindex="0">
+                    <div class="hero__desc">
+                      <h2 class="hero__title">
+                        Магические пейзажи Алтайского Края
+                      </h2>
+                      <p>Алтайский трекинг-тур&nbsp;&mdash; это захватывающее приключение с&nbsp;посещением магических и&nbsp;захватывающих дух ландшафтов Алтайских гор.</p>
+                      <a class="hero__view" href="">Смотреть тур</a>
+                      <div class="hero__details">
+                        <p class="hero__info">8 дней/7 ночей</p>
+                        <p class="hero__info hero__info--level">Легкая сложность</p>
+                      </div>
+                    </div>
+                    <div class="hero__audio" id="audio">
+                      <div class="hero__link" id="audio-on">
+                        <picture>
+                          <img width="340" height="220" src="img/Player.jpg" srcset="img/Player@2x.jpg" alt="Звуки Алтая.">
+                        </picture>
+                        <button class="btn btn--audio" id="audio-button" aria-label="Кнопка включения аудио.">
+                          <svg width="13" height="13">
+                            <use xlink:href="img/sprite/sprite.svg#play"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+              <div class="hero__pagination swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
       </main>
       <footer class="main-footer">
         <div class="container">
@@ -88,5 +172,6 @@
     </div>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
   </body>
 </html>

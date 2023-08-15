@@ -6,6 +6,8 @@
   min-height: 100vh;
   /* stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
+  font-family: "Montserrat", "Tahoma", sans-serif;
+  font-size: 1.1vw;
 
   .header,
   .footer {
@@ -14,6 +16,10 @@
 
   main {
     flex-grow: 1;
+  }
+
+  @include vp-1199 {
+    font-size: 2.1vw;
   }
 }
 

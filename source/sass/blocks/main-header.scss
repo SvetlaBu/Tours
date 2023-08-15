@@ -1,4 +1,11 @@
 .main-header {
+  &--opened {
+    a,
+    nav {
+      color: $color-default-white;
+    }
+  }
+
   .container {
     position: absolute;
     width: 100%;
@@ -14,44 +21,155 @@
     @include vp-1199 {
       padding: calc(30/768*100%) calc(45/768*100%);
       grid-template-columns: calc(133/678*100%) calc(144/678*100%) calc(136/678*100%);
-      column-gap: calc(141/678*100%);
+      column-gap: calc(133/678*100%);
       align-content: start;
-      grid-auto-rows: 4.1vw;
       font-size: 2.1vw;
+    }
+
+    @include vp-767 {
+      padding: calc(15/320*100%);
+      grid-template-columns: calc(124/290*100%) calc(112/290*100%);
+      column-gap: calc(126/678*100%);
+      font-size: 4.3vw;
+    }
+
+    .nav-list {
+      @include vp-1199 {
+        flex-direction: column;
+        justify-content: start;
+        row-gap: 2.2vw;
+        text-transform: uppercase;
+        margin-top: 92px;
+      }
+
+      @include vp-767 {
+        row-gap: 6.9vw;
+        margin-top: 85px;
+      }
+
+      &__item {
+        @include vp-1199 {
+          font-weight: 700;
+          text-align: start;
+          box-sizing: border-box;
+        }
+
+        @include vp-767 {
+          line-height: 1;
+          letter-spacing: 0.9px;
+        }
+      }
     }
   }
 
   a {
     display: block;
+
+    &:hover,
+    &:focus-visible,
+    &:focus {
+      color: #1c3374;
+    }
+
+    &:active {
+      color: $color-navy-blue;
+    }
+
+    &:disabled {
+      color: $color-navy-blue;
+      opacity: 0.1;
+    }
   }
 
   nav {
     @include vp-1199 {
       grid-column: 1/2;
-      grid-row: span 12;
+      grid-row: 1/-1;
     }
   }
 }
 
 .main-header__logo {
+  &:hover,
+  &:focus-visible,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+
+  &:disabled {
+    opacity: 0.1;
+  }
+
   @include vp-1199 {
     grid-column: 2/3;
-    grid-row: span 2;
+    grid-row: 1/-1;
+    justify-self: end;
+  }
+
+  @include vp-767 {
+    grid-row: 1/2;
   }
 
   svg {
     width: 100%;
+
+    @include vp-1199 {
+      height: 42px;
+    }
+
+    @include vp-1199 {
+      height: 36px;
+    }
   }
 }
 
 .main-header__phone {
-  font-size: 1.237vw;
+  font-size: 1.23vw;
   line-height: 1.5;
   font-weight: 600;
 
+  &:hover,
+  &:focus-visible,
+  &:focus {
+    color: #1c3374;
+  }
+
+  &:active {
+    color: $color-navy-blue;
+  }
+
+  &:disabled {
+    color: $color-navy-blue;
+    opacity: 0.1;
+  }
+
   @include vp-1199 {
     grid-column: 3/-1;
+    grid-row: 1/-1;
+    margin: 0;
+    text-align: start;
     font-size: 2.1vw;
-    grid-row: span 2;
+  }
+
+  @include vp-767 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    font-size: 4.3vw;
+    margin-top: 30px;
+    justify-self: end;
+  }
+
+  a {
+    @include vp-1199 {
+      margin: 10px 0 0 6px;
+    }
+
+    @include vp-767 {
+      margin: 10px 0 0 2px;
+    }
   }
 }

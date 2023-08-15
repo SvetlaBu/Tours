@@ -10,6 +10,14 @@
 
 .page-nav__list {
   display: block;
+
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.page-nav--closed > .page-nav__list {
+  display: none;
 }
 
 .page-nav--opened {
@@ -32,15 +40,20 @@
 }
 
 .page-nav__toggle {
-  position: absolute;
-  z-index: 4;
-  top: -56px;
-  right: 10px;
-  border: none;
-  outline: none;
-  padding: 20px 20px;
-  box-sizing: border-box;
-  background-color: $color-default-black;
+  display: none;
+
+  @include vp-1199 {
+    display: block;
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    left: -12px;
+    border: none;
+    outline: none;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    background-color: transparent;
+  }
 
   &:hover,
   &:focus {
@@ -52,17 +65,25 @@
   }
 }
 
-.page-nav--closed .page-nav__toggle::before {
-  content: "";
-  position: absolute;
-  z-index: 4;
-  top: 17px;
-  right: 50%;
-  transform: translateX(50%);
-  width: 24px;
-  height: 4px;
-  box-shadow: 0 8px 0 0 $color-default-black, 0 16px 0 0 $color-default-black;
-  cursor: pointer;
+.page-nav--closed > .page-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 4;
+    top: 21px;
+    left: 1.4vw;
+    background-color: $color-default-black;
+    width: 18px;
+    height: 2px;
+    cursor: pointer;
+  }
+
+  &::after {
+    top: 12px;
+    width: 26px;
+    box-shadow: 0 20px 0 0 $color-default-black;
+  }
 }
 
 .page-nav--opened .page-nav__toggle {
@@ -70,11 +91,16 @@
   &::after {
     content: "";
     position: absolute;
-    top: 82px;
+    top: 21px;
     right: 50%;
-    width: 24px;
-    height: 4px;
+    width: 26px;
+    height: 2px;
     background-color: $color-default-black;
+
+    @include vp-767 {
+      top: 10px;
+      right: 44%;
+    }
   }
 
   &::before {

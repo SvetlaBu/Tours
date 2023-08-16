@@ -4,6 +4,7 @@ import {Form} from './modules/form-validate/form';
 import {toggleMenu} from './modules/modals/menu';
 import {carouselHero} from './vendor/carousel';
 import {findVideos} from './modules/video';
+import {addAudioPlayer} from './modules/audio';
 
 
 // ---------------------------------
@@ -18,7 +19,6 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   carouselHero();
   toggleMenu();
-  findVideos();
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
@@ -28,6 +28,8 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    findVideos();
+    addAudioPlayer();
   });
 });
 

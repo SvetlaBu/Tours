@@ -6,7 +6,7 @@ const toggleMenu = () => {
   navMain.classList.remove('page-nav--nojs');
 
   navToggle.addEventListener('click', function () {
-    header.classList.toggle('main-header--opened');
+    header.classList.toggle('is-opened');
     if (navMain.classList.contains('page-nav--closed')) {
       navMain.classList.remove('page-nav--closed');
       navMain.classList.add('page-nav--opened');

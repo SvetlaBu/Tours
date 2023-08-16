@@ -1,18 +1,18 @@
 .main-header {
-  color: $color-default-white;
   z-index: 2;
+  position: absolute;
+  width: 100%;
+  top: 0;
 
-  &--opened {
-    a,
-    nav {
-      color: $color-default-black;
-    }
+   & .is-opened {
+    color: $color-default-black;
+  }
+
+  @include vp-1199 {
+    color: $color-default-white;
   }
 
   .container {
-    position: absolute;
-    width: 100%;
-    top: 0;
     padding: calc(40/1440*100%) calc(120/1440*100%);
     box-sizing: border-box;
     display: grid;

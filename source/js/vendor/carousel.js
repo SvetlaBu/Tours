@@ -1,4 +1,5 @@
 import './swiper.js';
+
 const carouselList = document.getElementById('carousel');
 const sliderlList = document.getElementById('slider');
 const swiperEl = document.querySelector('.swiper-wrapper');

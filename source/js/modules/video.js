@@ -16,11 +16,10 @@ const setupVideo = (video) => {
     link.remove();
     button.remove();
     video.appendChild(iframe);
-    video.classList.add('info__video--active');
+    video.classList.add('hero__video--active');
   }, {once: true});
 
-  link.removeAttribute('href');
-  video.classList.add('info__video--enabled');
+  video.classList.add('hero__video--enabled');
 };
 
 const createIframe = () => {
@@ -29,7 +28,7 @@ const createIframe = () => {
   iframe.setAttribute('allowfullscreen', '');
   iframe.setAttribute('allow', 'autoplay');
   iframe.setAttribute('src', 'https://www.youtube.com/embed/9TZXsZItgdw?rel=0&showinfo=0&fs=1&modestbranding=1&color=white&autoplay=1');
-  iframe.classList.add('info__preview');
+  iframe.classList.add('hero__preview');
 
   return iframe;
 };

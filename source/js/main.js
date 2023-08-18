@@ -5,6 +5,7 @@ import {toggleMenu} from './modules/modals/menu';
 import {carouselHero} from './vendor/carousel';
 import {findVideos} from './modules/video';
 import {addAudioPlayer} from './modules/audio';
+import {addToursSlider} from './vendor/tours';
 
 
 // ---------------------------------
@@ -30,6 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
     findVideos();
     addAudioPlayer();
+    addToursSlider();
   });
 });
 

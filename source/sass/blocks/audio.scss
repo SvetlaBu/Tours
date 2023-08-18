@@ -60,6 +60,10 @@
     color: $color-navy-blue;
   }
 
+  @include focus {
+    color: $color-navy-blue;
+  }
+
   @include active {
     color: $color-midnight-express;
   }

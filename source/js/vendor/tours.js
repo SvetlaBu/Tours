@@ -9,7 +9,7 @@ const addToursSlider = () => {
         0: {
           centeredSlides: true,
           slidesPerView: 'auto',
-          spaceBetween: 100,
+          spaceBetween: 10,
         },
         768: {
           centeredSlides: false,

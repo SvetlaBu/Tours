@@ -36,7 +36,7 @@
 .hero__item {
   margin: 0 auto;
   max-width: 100%;
-  padding: 12.7vw 8.3vw 4vw;
+  padding: 12.7vw 8.3vw 4.8vw;
   background-color: $color-navy-blue;
   background-image: url("../img/peaks-desktop.jpg");
   background-size: 100% 100%;
@@ -48,7 +48,7 @@
   }
 
   @include vp-1199 {
-    padding: 12.7vw 8.3vw 34vw;
+    padding: 12.7vw 8.3vw 33vw;
     background-image: url("../img/peaks-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -57,7 +57,7 @@
   }
 
   @include vp-767 {
-    padding: 42.7vw 4.6vw 53vw;
+    padding: 43.7vw 4.6vw 53vw;
     background-image: url("../img/peaks-mobile.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -97,7 +97,7 @@
 
   &--2 {
     background-image: url("../img/kamchatka-desktop.jpg");
-    padding: 12.7vw 8.3vw 27.6vw;
+    padding: 12.7vw 8.3vw 7.6vw;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/kamchatka-desktop@2x.jpg");
@@ -228,7 +228,7 @@
   justify-content: center;
   padding: 20px;
   width: 18.2%;
-  margin: 0 0 10vw;
+  margin: 0 0 9.5vw;
 
   @include vp-1199 {
     width: 32%;
@@ -269,7 +269,7 @@
   p {
     flex: 0 0 auto;
     font-size: 0.8vw;
-    padding: 1vw 1.6vw 1vw 2.5vw;
+    padding: 1vw 1.6vw 0.7vw 2.5vw;
     border: 1px solid $color-default-white;
     position: relative;
   }
@@ -404,7 +404,7 @@
 }
 
 .hero__pagination {
-  text-align: end;
+  text-align: center;
   bottom: 8.6vw;
   right: 7.7vw;
   width: 60%;

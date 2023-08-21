@@ -1,5 +1,10 @@
-<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M20 21H16.4V1H20V21Z" stroke="#2D383F" stroke-miterlimit="16" stroke-linecap="round"/>
-  <path d="M12.8 21V6.45455H9.2L9.2 21H12.8Z" stroke="#2D383F" stroke-miterlimit="16" stroke-linecap="round"/>
-  <path d="M5.6 21V11.9091H2V21H5.6Z" stroke="#2D383F" stroke-miterlimit="16" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none">
+  <g stroke="#fff" stroke-linecap="round" stroke-miterlimit="16" clip-path="url(#a)">
+    <path d="M10.91 11.454H8.944V.545h1.964v10.91ZM6.982 11.454V3.521H5.018v7.933h1.964ZM3.055 11.454V6.496H1.09v4.958h1.964Z"/>
+  </g>
+  <defs>
+    <clipPath id="a">
+      <path fill="#fff" d="M0 0h12v12H0z"/>
+    </clipPath>
+  </defs>
 </svg>

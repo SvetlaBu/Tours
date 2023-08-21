@@ -1,0 +1,62 @@
+.buttons {
+  display: flex;
+  gap: 0 0.3vw;
+
+  @include vp-1199 {
+    gap: 0 0.5vw;
+  }
+
+  @include vp-767 {
+    gap: 0 1vw;
+  }
+}
+
+.button {
+  position: relative;
+  display: block;
+  width: 2.55vw;
+  height: 2.5vw;
+  color: $color-default-white;
+  background-color: $color-navy-blue;
+  border: 1px solid $color-transparent;
+  outline: none;
+  cursor: pointer;
+  transition: all $trans-default;
+
+  @include vp-1199 {
+    width: 4.85vw;
+    height: 4.7vw;
+  }
+
+  @include vp-767 {
+    width: 12vw;
+    height: 11vw;
+  }
+
+  @include hover-focus {
+    color: $color-resolution-blue;
+    background-color: $color-default-white;
+    border-color: $color-resolution-blue;
+  }
+
+  @include active {
+    color: $color-default-white;
+    background-color: $color-resolution-blue;
+  }
+
+  &:disabled {
+    color: $color-default-white;
+    background-color: rgba($color-navy-blue, 0.2);
+    pointer-events: none;
+  }
+}
+
+.button svg {
+  position: absolute;
+  margin: auto;
+  inset: 0;
+}
+
+.button.is-prev svg {
+  rotate: 180deg;
+}

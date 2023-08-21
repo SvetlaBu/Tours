@@ -1,0 +1,423 @@
+.hero {
+  overflow: hidden;
+  min-width: 320px;
+  width: 100%;
+  color: $color-default-white;
+}
+
+.hero__container {
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero__title {
+  margin: 0 0 1.6vw;
+  padding: 0;
+  width: 90%;
+  font-weight: 600;
+  font-size: 5.45vw;
+  line-height: 1;
+  position: relative;
+  z-index: 3;
+
+  @include vp-1199 {
+    margin: 10vw auto 1.6vw;
+    font-size: 7.45vw;
+  }
+
+  @include vp-767 {
+    margin: 0 auto 2vw;
+    width: 100%;
+    font-size: 9vw;
+  }
+}
+
+.hero__item {
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 12.7vw 8.3vw 4.8vw;
+  background-color: $color-navy-blue;
+  background-image: url("../img/peaks-desktop.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/peaks-desktop@2x.jpg");
+  }
+
+  @include vp-1199 {
+    padding: 12.7vw 8.3vw 33vw;
+    background-image: url("../img/peaks-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/peaks-tablet@2x.jpg");
+    }
+  }
+
+  @include vp-767 {
+    padding: 43.7vw 4.6vw 53vw;
+    background-image: url("../img/peaks-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/peaks-mobile@2x.jpg");
+    }
+  }
+
+  .hero__title {
+    @include vp-767 {
+      font-size: 9.4vw;
+      margin: 0 auto 5vw;
+    }
+  }
+
+  .hero__text {
+    margin: 0;
+    font-weight: 400;
+    width: 36%;
+    letter-spacing: 0.03em;
+    margin-bottom: 2.2vw;
+
+    @include vp-1199 {
+      margin: 0 auto 3.5vw;
+      letter-spacing: 0.05em;
+      font-size: 2vw;
+      width: 70%;
+    }
+
+    @include vp-767 {
+      text-align: center;
+      font-size: 4.6vw;
+      width: 100%;
+      line-height: 1.4;
+      letter-spacing: 0;
+    }
+  }
+
+  &--2 {
+    background-image: url("../img/kamchatka-desktop.jpg");
+    padding: 12.7vw 8.3vw 7.6vw;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/kamchatka-desktop@2x.jpg");
+    }
+
+    @include vp-1199 {
+      padding: 12.7vw 8.3vw 34vw;
+      background-image: url("../img/kamchatka-tablet.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/kamchatka-tablet@2x.jpg");
+      }
+    }
+
+    @include vp-767 {
+      padding: 42.7vw 4.6vw 53vw;
+      background-image: url("../img/kamchatka-mobile.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/kamchatka-mobile@2x.jpg");
+      }
+    }
+
+    .hero__title {
+      width: 75%;
+
+      @include vp-1199 {
+        width: 100%;
+      }
+    }
+
+    .hero__text {
+      width: 38%;
+
+      @include vp-1199 {
+        width: 80%;
+      }
+
+      @include vp-767 {
+        width: 96%;
+        line-height: 1.4;
+        margin: 0 auto 4.8vw;
+      }
+    }
+
+    .hero__view {
+      margin: 0 0 9.2vw;
+
+      @include vp-1199 {
+        margin: 0 auto 1vw;
+      }
+    }
+  }
+
+  &--3 {
+    @include vp-1199 {
+      text-align: center;
+      padding: 12.7vw 5.3vw 36.8vw;
+    }
+
+    .hero__title {
+      @include vp-1199 {
+        width: 100%;
+      }
+    }
+
+    .hero__text {
+      margin: 0 0 0.5vw;
+
+      @include vp-1199 {
+        margin: 0 auto 3vw;
+      }
+
+      @include vp-767 {
+        margin: 0 auto 5vw;
+      }
+    }
+
+    .hero__view {
+      @include vp-1199 {
+        width: 30%;
+        margin: 0 auto 9.2vw;
+      }
+
+      @include vp-1199 {
+        width: 60%;
+      }
+    }
+
+    background-image: url("../img/altai-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/altai-desktop@2x.jpg");
+    }
+
+    @include vp-1199 {
+      padding: 12.7vw 8.3vw 34vw;
+      background-image: url("../img/altai-tablet.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/altai-tablet@2x.jpg");
+      }
+    }
+
+    @include vp-767 {
+      padding: 42.7vw 4.6vw 38vw;
+      background-image: url("../img/altai-mobile.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/altai-mobile@2x.jpg");
+      }
+    }
+  }
+}
+
+.hero__space {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.hero__view {
+  color: $color-default-white;
+  background-color: $color-navy-blue;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  width: 18.2%;
+  margin: 0 0 9.5vw;
+
+  @include vp-1199 {
+    width: 32%;
+    font-size: 2.1vw;
+    margin: 0 auto 1vw;
+    padding: 20px 20px 16px 20px;
+  }
+
+  @include vp-767 {
+    width: 62%;
+    font-size: 5vw;
+    padding: 16px 20px 14px;
+  }
+}
+
+.hero__desc {
+  font-size: 1.1vw;
+  font-weight: 400;
+  z-index: 2;
+  position: relative;
+  text-align: start;
+
+  @include vp-1199 {
+    text-align: center;
+  }
+}
+
+.hero__details {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 0.7vw;
+
+  @include vp-1199 {
+    display: none;
+  }
+
+  p {
+    flex: 0 0 auto;
+    font-size: 0.8vw;
+    padding: 1vw 1.6vw 0.7vw 2.5vw;
+    border: 1px solid $color-default-white;
+    position: relative;
+  }
+
+  p::before {
+    content: url("../img/svg/moon.svg");
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 1.3vw;
+    color: $color-default-white;
+    transform: translateY(-50%);
+  }
+
+  .hero__info--level {
+    flex: 0 0 auto;
+  }
+
+  .hero__info--level::before {
+    content: url("../img/svg/level.svg");
+  }
+}
+
+.hero__pic {
+  position: absolute;
+  top: 14vw;
+  right: 17vw;
+  width: 20vw;
+  height: 20vw;
+
+  @include vp-1199 {
+    position: relative;
+    top: 3.6vw;
+    right: 0;
+    margin: 0 auto;
+    width: 58vw;
+    height: 45vw;
+  }
+
+  img {
+    @include vp-1199 {
+      width: 57vw;
+    }
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.hero__link {
+  position: relative;
+
+  @include vp-1199 {
+    height: 40vw;
+  }
+}
+
+.hero__video {
+  position: absolute;
+  top: 21vw;
+  right: 8.5vw;
+  width: 33vw;
+  padding-bottom: 22.63%;
+  height: 0;
+  overflow: hidden;
+
+  @include vp-1199 {
+    position: relative;
+    right: 0;
+    top: 4.8vw;
+    width: 58vw;
+    padding-bottom: 48%;
+    margin: 0 auto;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+
+  & img,
+  .hero__preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+  }
+
+  & iframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-width: 0;
+    outline-width: 0;
+  }
+}
+
+.hero__button {
+  position: absolute;
+  z-index: 2;
+  padding: 1vw 1vw 1vw 1.2vw;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid $color-default-white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @include vp-1199 {
+    padding: 2.4vw 2.4vw 2.4vw 2.6vw;
+  }
+}
+
+.hero__audio {
+  position: absolute;
+  top: 21vw;
+  right: 8.5vw;
+  z-index: 2;
+
+  @include vp-1199 {
+    position: relative;
+    right: 0;
+    top: 0;
+    margin: 0 auto;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.hero__pagination {
+  text-align: center;
+  bottom: 8.6vw;
+  right: 7.7vw;
+  width: 60%;
+
+  @include vp-1199 {
+    text-align: center;
+    width: 100%;
+    right: 0;
+    bottom: 12.2vw;
+  }
+
+  @include vp-767 {
+    scale: 0.78;
+    bottom: 18.2vw;
+  }
+}

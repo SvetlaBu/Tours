@@ -2,6 +2,11 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {toggleMenu} from './modules/modals/menu';
+import {carouselHero} from './vendor/carousel';
+import {findVideos} from './modules/video';
+import {addAudioPlayer} from './modules/audio';
+import {addToursSlider} from './vendor/tours';
+
 
 // ---------------------------------
 
@@ -13,7 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
 
   // Modules
-
+  carouselHero();
   toggleMenu();
   // ---------------------------------
 
@@ -24,6 +29,9 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    findVideos();
+    addAudioPlayer();
+    addToursSlider();
   });
 });
 

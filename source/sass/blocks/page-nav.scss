@@ -47,10 +47,8 @@
     position: absolute;
     z-index: 4;
     top: 0;
-    left: -12px;
     border: none;
     outline: none;
-    padding: 20px 20px;
     box-sizing: border-box;
     background-color: transparent;
   }
@@ -71,9 +69,8 @@
     content: "";
     position: absolute;
     z-index: 4;
-    top: 21px;
-    left: 1.4vw;
-    background-color: $color-default-black;
+    top: 0;
+    background-color: $color-default-white;
     width: 18px;
     height: 2px;
     cursor: pointer;
@@ -82,7 +79,7 @@
   &::after {
     top: 12px;
     width: 26px;
-    box-shadow: 0 20px 0 0 $color-default-black;
+    box-shadow: 0 -22px 0 0 $color-default-white;
   }
 }
 
@@ -126,8 +123,8 @@
   display: none;
 }
 
-.page-nav--nojs {
-  // @include vp-1199 {
-  //   margin-top: 36px;
-  // }
-}
+// .page-nav--nojs {
+//  @include vp-1199 {
+//    margin-top: 36px;
+//  }
+// }

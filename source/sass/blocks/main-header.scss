@@ -1,15 +1,11 @@
 .main-header {
-  &--opened {
-    a,
-    nav {
-      color: $color-default-white;
-    }
-  }
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  color: $color-default-white;
 
   .container {
-    position: absolute;
-    width: 100%;
-    top: 0;
     padding: calc(40/1440*100%) calc(120/1440*100%);
     box-sizing: border-box;
     display: grid;
@@ -19,7 +15,7 @@
     column-gap: calc(134/1200*100%);
 
     @include vp-1199 {
-      padding: calc(30/768*100%) calc(45/768*100%);
+      padding: 3.9% 5.86% 3.9% 5.76%;
       grid-template-columns: calc(133/678*100%) calc(144/678*100%) calc(136/678*100%);
       column-gap: calc(133/678*100%);
       align-content: start;
@@ -64,6 +60,7 @@
 
   a {
     display: block;
+    color: inherit;
 
     &:hover,
     &:focus-visible,
@@ -86,6 +83,14 @@
       grid-column: 1/2;
       grid-row: 1/-1;
     }
+  }
+}
+
+.is-opened {
+  @include vp-1199 {
+    color: $color-default-black;
+    background-color: $color-default-white;
+    position: relative;
   }
 }
 
@@ -118,11 +123,12 @@
     width: 100%;
 
     @include vp-1199 {
-      height: 42px;
+      height: auto;
+      width: 18vw;
     }
 
-    @include vp-1199 {
-      height: 36px;
+    @include vp-767 {
+      width: 36vw;
     }
   }
 }

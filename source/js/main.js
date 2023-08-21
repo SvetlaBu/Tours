@@ -6,6 +6,7 @@ import {carouselHero} from './vendor/carousel';
 import {findVideos} from './modules/video';
 import {addAudioPlayer} from './modules/audio';
 import {addToursSlider} from './vendor/tours';
+import {addCoachesSlider} from './vendor/coaches';
 
 
 // ---------------------------------
@@ -32,6 +33,7 @@ window.addEventListener('DOMContentLoaded', () => {
     findVideos();
     addAudioPlayer();
     addToursSlider();
+    addCoachesSlider();
   });
 });
 

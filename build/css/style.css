@@ -1322,7 +1322,8 @@ button,
   /* stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
   font-family: "Montserrat", "Tahoma", sans-serif;
-  font-size: 1.1vw;
+  font-size: 1.25vw;
+  color: #2D383F;
 }
 .wrapper .header,
 .wrapper .footer {
@@ -3246,6 +3247,288 @@ button,
     bottom: auto;
     font-size: 26px;
     line-height: 26px;
+  }
+}
+
+.training .container {
+  padding: 6% 8.3333333333% 4.3055555556%;
+}
+@media (max-width: 1199px) {
+  .training .container {
+    padding: 4.8% 6% 5.6%;
+  }
+}
+@media (max-width: 767px) {
+  .training .container {
+    padding: 14% 5% 19.375%;
+  }
+}
+
+.training__title {
+  margin: 0 0 2.3vw;
+}
+
+.training__text,
+.training__info {
+  font-size: 1.11vw;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #2D383F;
+  margin: 0 0 2.3vw;
+}
+
+.training__text {
+  width: 70%;
+}
+
+.training__names {
+  font-size: 1.46vw;
+  line-height: 1;
+  margin: 0 0 2.5vw;
+}
+
+.training__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 0 0 2.3vw;
+}
+
+.training__person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 1.46vw;
+  line-height: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.training__name {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.training__link {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: 1px solid rgba(2, 102, 193, 0.1);
+}
+
+.training__coaches {
+  width: 100%;
+}
+
+.training__list {
+  padding: 20px;
+  margin: 0;
+  list-style: none;
+  -webkit-box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
+          box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
+}
+
+.training__coach {
+  padding: 1%;
+  margin-left: -10px;
+  min-height: 34vw;
+  border: 1px solid #ffffff;
+  -webkit-box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
+          box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
+}
+.training__coach img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.training__desc {
+  font-size: 0.8vw;
+}
+
+.training__steps,
+.training__step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: wrap;
+      -ms-flex: wrap;
+          flex: wrap;
+}
+
+@media (max-width: 1199px) {
+  .training__steps {
+    display: -ms-grid;
+    display: grid;
+    gap: 20vw 10%;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+  }
+}
+@media (max-width: 767px) {
+  .training__steps {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.training__step {
+  position: relative;
+  gap: 5%;
+}
+
+.training__step::after,
+.training__step::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -34px;
+  left: -3px;
+  height: 1px;
+  background-color: rgba(2, 102, 193, 0.1);
+}
+
+.training__step::before {
+  content: "";
+  bottom: -41px;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  background-color: #0266c1;
+  border-radius: 50%;
+}
+@media (max-width: 767px) {
+  .training__step::before {
+    top: 18px;
+    left: -33px;
+    width: 13px;
+    height: 13px;
+  }
+}
+
+@media (max-width: 767px) {
+  .training__step::after {
+    top: -13px;
+    right: 0;
+    bottom: -13px;
+    left: -27px;
+    width: 1px;
+    height: auto;
+  }
+}
+
+.training__step:first-of-type::after {
+  left: -50vw;
+}
+@media (max-width: 1199px) {
+  .training__step:first-of-type::after {
+    width: 48vw;
+    left: 0;
+  }
+}
+@media (max-width: 767px) {
+  .training__step:first-of-type::after {
+    width: 1px;
+    height: auto;
+  }
+}
+
+.training__step:last-of-type::after {
+  width: 50vw;
+}
+@media (max-width: 1199px) {
+  .training__step:last-of-type::after {
+    width: 48vw;
+  }
+}
+@media (max-width: 767px) {
+  .training__step:last-of-type::after {
+    width: 1px;
+    height: auto;
+  }
+}
+
+@media (max-width: 1199px) {
+  .training__step-peaks {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+}
+
+@media (max-width: 1199px) {
+  .training__step-forest {
+    grid-column: 2/-1;
+  }
+}
+
+@media (max-width: 1199px) {
+  .training__step-peaks::before,
+.training__step-forest::before,
+.training__step-peaks::after,
+.training__step-forest::after {
+    top: -34px;
+  }
+}
+@media (max-width: 767px) {
+  .training__step-peaks::before,
+.training__step-forest::before,
+.training__step-peaks::after,
+.training__step-forest::after {
+    top: -13px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .training__step-equipment::after {
+    position: absolute;
+    right: auto;
+    bottom: -73px;
+    left: 6px;
+    width: 1px;
+    height: 60px;
+    background-color: rgba(2, 102, 193, 0.1);
+  }
+}
+
+@media (max-width: 1199px) {
+  .training__step-forest::after {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .training__step-forest::after {
+    display: block;
+  }
+}
+
+@media (max-width: 1199px) {
+  .training__step-peaks::before,
+.training__step-forest::before {
+    top: -40px;
   }
 }
 

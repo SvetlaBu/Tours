@@ -1,0 +1,237 @@
+.training {
+  .container {
+    padding: 6% calc(120/1440*100%) calc(62/1440*100%);
+
+    @include vp-1199 {
+      padding: 4.8% 6% 5.6%;
+    }
+
+    @include vp-767 {
+      padding: 14% 5% calc(62/320*100%);
+    }
+  }
+}
+
+.training__title {
+  margin: 0 0 2.3vw;
+}
+
+.training__text,
+.training__info {
+  font-size: 1.11vw;
+  line-height: 1.5;
+  font-weight: 400;
+  color: $color-elephant;
+  margin: 0 0 2.3vw;
+}
+
+.training__text {
+  width: 70%;
+}
+
+.training__names {
+  font-size: 1.46vw;
+  line-height: 1;
+  margin: 0 0 2.5vw;
+}
+
+.training__top {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin: 0 0 2.3vw;
+}
+
+.training__person {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.46vw;
+  line-height: 1;
+  justify-content: space-between;
+}
+
+.training__name {
+  flex: 0 0 50%;
+}
+
+.training__link {
+  align-self: center;
+  border: 1px solid rgba(2, 102, 193, 0.1);
+}
+
+.training__coaches {
+  width: 100%;
+}
+
+.training__list {
+  padding: 20px;
+  margin: 0;
+  list-style: none;
+  box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
+}
+
+.training__coach {
+  padding: 1%;
+  margin-left: -10px;
+  min-height: 34vw;
+  border: 1px solid $color-default-white;
+  box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
+
+  img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.training__desc {
+  font-size: 0.8vw;
+}
+
+.training__steps,
+.training__step {
+  display: flex;
+  flex-direction: row;
+  flex: wrap;
+}
+
+.training__steps {
+  @include vp-1199 {
+    display: grid;
+    gap: 20vw 10%;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.training__step {
+  position: relative;
+  gap: 5%;
+}
+
+.training__step::after,
+.training__step::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -34px;
+  left: -3px;
+  height: 1px;
+  background-color: rgba(2, 102, 193, 0.1);
+}
+
+.training__step::before {
+  content: "";
+  bottom: -41px;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  background-color: #0266c1;
+  border-radius: 50%;
+
+  @include vp-767 {
+    top: 18px;
+    left: -33px;
+    width: 13px;
+    height: 13px;
+  }
+}
+
+.training__step::after {
+  @include vp-767 {
+    top: -13px;
+    right: 0;
+    bottom: -13px;
+    left: -27px;
+    width: 1px;
+    height: auto;
+  }
+}
+
+.training__step:first-of-type::after {
+  left: -50vw;
+
+  @include vp-1199 {
+    width: 48vw;
+    left: 0;
+  }
+
+  @include vp-767 {
+    width: 1px;
+    height: auto;
+  }
+}
+
+.training__step:last-of-type::after {
+  width: 50vw;
+
+  @include vp-1199 {
+    width: 48vw;
+  }
+
+  @include vp-767 {
+    width: 1px;
+    height: auto;
+  }
+}
+
+.training__step-peaks {
+  @include vp-1199 {
+    grid-column: 1/2;
+    grid-row: 2;
+  }
+}
+
+.training__step-forest {
+  @include vp-1199 {
+    grid-column: 2/-1;
+  }
+}
+
+.training__step-peaks::before,
+.training__step-forest::before,
+.training__step-peaks::after,
+.training__step-forest::after {
+  @include vp-1199 {
+    top: -34px;
+  }
+
+  @include vp-767 {
+    top: -13px;
+  }
+}
+
+.training__step-equipment::after {
+  @include vp-1199 {
+    position: absolute;
+    right: auto;
+    bottom: -73px;
+    left: 6px;
+    width: 1px;
+    height: 60px;
+    background-color: rgba(2, 102, 193, 0.1);
+  }
+}
+
+.training__step-forest::after {
+  @include vp-1199 {
+    display: none;
+  }
+
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.training__step-peaks::before,
+.training__step-forest::before {
+  @include vp-1199 {
+    top: -40px;
+  }
+}

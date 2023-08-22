@@ -1324,6 +1324,7 @@ button,
   font-family: "Montserrat", "Tahoma", sans-serif;
   font-size: 1.25vw;
   color: #2D383F;
+  overflow: hidden;
 }
 .wrapper .header,
 .wrapper .footer {
@@ -3240,7 +3241,7 @@ button,
 }
 @media (max-width: 767px) {
   .headline {
-    font-size: 7vw;
+    font-size: 6.9vw;
   }
   .headline::before {
     top: -4px;
@@ -3276,15 +3277,58 @@ button,
   color: #2D383F;
   margin: 0 0 2.3vw;
 }
+@media (max-width: 1199px) {
+  .training__text,
+.training__info {
+    font-size: 2.09vw;
+  }
+}
+@media (max-width: 767px) {
+  .training__text,
+.training__info {
+    font-size: 4.39vw;
+  }
+}
 
 .training__text {
   width: 70%;
+}
+@media (max-width: 1199px) {
+  .training__text {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1199px) {
+  .training__info {
+    font-size: 1.83vw;
+    width: 70%;
+  }
+}
+@media (max-width: 767px) {
+  .training__info {
+    font-size: 3.75vw;
+  }
 }
 
 .training__names {
   font-size: 1.46vw;
   line-height: 1;
   margin: 0 0 2.5vw;
+}
+@media (max-width: 1199px) {
+  .training__names {
+    font-size: 2.35vw;
+    margin: 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+@media (max-width: 767px) {
+  .training__names {
+    font-size: 4.4vw;
+  }
 }
 
 .training__top {
@@ -3317,6 +3361,16 @@ button,
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
 }
+@media (max-width: 1199px) {
+  .training__name {
+    font-size: 1.83vw;
+  }
+}
+@media (max-width: 767px) {
+  .training__name {
+    font-size: 4.39vw;
+  }
+}
 
 .training__link {
   -ms-flex-item-align: center;
@@ -3328,13 +3382,16 @@ button,
 .training__coaches {
   width: 100%;
 }
+@media (max-width: 1199px) {
+  .training__coaches {
+    margin: 0 0 4.8vw;
+  }
+}
 
 .training__list {
   padding: 20px;
   margin: 0;
   list-style: none;
-  -webkit-box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
-          box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
 }
 
 .training__coach {
@@ -3344,6 +3401,16 @@ button,
   border: 1px solid #ffffff;
   -webkit-box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
           box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
+}
+@media (max-width: 1199px) {
+  .training__coach {
+    min-height: 54vw;
+  }
+}
+@media (max-width: 767px) {
+  .training__coach {
+    padding: 6.95%;
+  }
 }
 .training__coach img {
   margin: 0;
@@ -3355,6 +3422,17 @@ button,
 
 .training__desc {
   font-size: 0.8vw;
+}
+@media (max-width: 1199px) {
+  .training__desc {
+    font-size: 1.57vw;
+  }
+}
+@media (max-width: 767px) {
+  .training__desc {
+    font-size: 3.75vw;
+    width: 82%;
+  }
 }
 
 .training__steps,
@@ -3390,12 +3468,22 @@ button,
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-top: 7.9vw;
+    gap: 0;
   }
 }
 
 .training__step {
   position: relative;
   gap: 5%;
+}
+@media (max-width: 767px) {
+  .training__step {
+    padding-bottom: 7vw;
+  }
+}
+.training__step:last-of-type {
+  padding-bottom: 0;
 }
 
 .training__step::after,
@@ -3420,7 +3508,7 @@ button,
 }
 @media (max-width: 767px) {
   .training__step::before {
-    top: 18px;
+    top: 8px;
     left: -33px;
     width: 13px;
     height: 13px;
@@ -3429,7 +3517,7 @@ button,
 
 @media (max-width: 767px) {
   .training__step::after {
-    top: -13px;
+    top: 8px;
     right: 0;
     bottom: -13px;
     left: -27px;
@@ -3443,14 +3531,14 @@ button,
 }
 @media (max-width: 1199px) {
   .training__step:first-of-type::after {
-    width: 48vw;
+    width: 47vw;
     left: 0;
   }
 }
 @media (max-width: 767px) {
   .training__step:first-of-type::after {
     width: 1px;
-    height: auto;
+    left: -27px;
   }
 }
 
@@ -3459,13 +3547,12 @@ button,
 }
 @media (max-width: 1199px) {
   .training__step:last-of-type::after {
-    width: 48vw;
+    width: 47vw;
   }
 }
 @media (max-width: 767px) {
   .training__step:last-of-type::after {
     width: 1px;
-    height: auto;
   }
 }
 
@@ -3498,30 +3585,37 @@ button,
 .training__step-forest::before,
 .training__step-peaks::after,
 .training__step-forest::after {
-    top: -13px;
+    display: block;
+    top: 8px;
   }
 }
 
 @media (max-width: 1199px) {
   .training__step-equipment::after {
-    position: absolute;
-    right: auto;
-    bottom: -73px;
-    left: 6px;
-    width: 1px;
-    height: 60px;
-    background-color: rgba(2, 102, 193, 0.1);
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .training__step-equipment::after {
+    display: block;
   }
 }
 
 @media (max-width: 1199px) {
   .training__step-forest::after {
-    display: none;
+    position: absolute;
+    right: auto;
+    top: -15vw;
+    left: 6px;
+    width: 1px;
+    height: 10vw;
   }
 }
 @media (max-width: 767px) {
   .training__step-forest::after {
-    display: block;
+    top: 8px;
+    left: -27px;
+    height: auto;
   }
 }
 
@@ -3529,6 +3623,18 @@ button,
   .training__step-peaks::before,
 .training__step-forest::before {
     top: -40px;
+  }
+}
+@media (max-width: 767px) {
+  .training__step-peaks::before,
+.training__step-forest::before {
+    top: 8px;
+  }
+}
+
+@media (max-width: 767px) {
+  .training__step-peaks::after {
+    display: none;
   }
 }
 

@@ -23,16 +23,49 @@
   font-weight: 400;
   color: $color-elephant;
   margin: 0 0 2.3vw;
+
+  @include vp-1199 {
+    font-size: 2.09vw;
+  }
+
+  @include vp-767 {
+    font-size: 4.39vw;
+  }
 }
 
 .training__text {
   width: 70%;
+
+  @include vp-1199 {
+    width: 80%;
+  }
+}
+
+.training__info {
+  @include vp-1199 {
+    font-size: 1.83vw;
+    width: 70%;
+  }
+
+  @include vp-767 {
+    font-size: 3.75vw;
+  }
 }
 
 .training__names {
   font-size: 1.46vw;
   line-height: 1;
   margin: 0 0 2.5vw;
+
+  @include vp-1199 {
+    font-size: 2.35vw;
+    margin: 0;
+    align-self: center;
+  }
+
+  @include vp-767 {
+    font-size: 4.4vw;
+  }
 }
 
 .training__top {
@@ -52,6 +85,14 @@
 
 .training__name {
   flex: 0 0 50%;
+
+  @include vp-1199 {
+    font-size: 1.83vw;
+  }
+
+  @include vp-767 {
+    font-size: 4.39vw;
+  }
 }
 
 .training__link {
@@ -61,13 +102,17 @@
 
 .training__coaches {
   width: 100%;
+
+  @include vp-1199 {
+    margin: 0 0 4.8vw;
+  }
 }
 
 .training__list {
   padding: 20px;
   margin: 0;
   list-style: none;
-  box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
+  // box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
 }
 
 .training__coach {
@@ -76,6 +121,14 @@
   min-height: 34vw;
   border: 1px solid $color-default-white;
   box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
+
+  @include vp-1199 {
+    min-height: 54vw;
+  }
+
+  @include vp-767 {
+    padding: 6.95%;
+  }
 
   img {
     margin: 0;
@@ -87,6 +140,15 @@
 
 .training__desc {
   font-size: 0.8vw;
+
+  @include vp-1199 {
+    font-size: 1.57vw;
+  }
+
+  @include vp-767 {
+    font-size: 3.75vw;
+    width: 82%;
+  }
 }
 
 .training__steps,
@@ -107,12 +169,22 @@
   @include vp-767 {
     display: flex;
     flex-direction: column;
+    margin-top: 7.9vw;
+    gap: 0;
   }
 }
 
 .training__step {
   position: relative;
   gap: 5%;
+
+  @include vp-767 {
+    padding-bottom: 7vw;
+  }
+
+  &:last-of-type {
+    padding-bottom: 0;
+  }
 }
 
 .training__step::after,
@@ -136,7 +208,7 @@
   border-radius: 50%;
 
   @include vp-767 {
-    top: 18px;
+    top: 8px;
     left: -33px;
     width: 13px;
     height: 13px;
@@ -145,7 +217,7 @@
 
 .training__step::after {
   @include vp-767 {
-    top: -13px;
+    top: 8px;
     right: 0;
     bottom: -13px;
     left: -27px;
@@ -158,13 +230,13 @@
   left: -50vw;
 
   @include vp-1199 {
-    width: 48vw;
+    width: 47vw;
     left: 0;
   }
 
   @include vp-767 {
     width: 1px;
-    height: auto;
+    left: -27px;
   }
 }
 
@@ -172,12 +244,11 @@
   width: 50vw;
 
   @include vp-1199 {
-    width: 48vw;
+    width: 47vw;
   }
 
   @include vp-767 {
     width: 1px;
-    height: auto;
   }
 }
 
@@ -203,23 +274,12 @@
   }
 
   @include vp-767 {
-    top: -13px;
+    display: block;
+    top: 8px;
   }
 }
 
 .training__step-equipment::after {
-  @include vp-1199 {
-    position: absolute;
-    right: auto;
-    bottom: -73px;
-    left: 6px;
-    width: 1px;
-    height: 60px;
-    background-color: rgba(2, 102, 193, 0.1);
-  }
-}
-
-.training__step-forest::after {
   @include vp-1199 {
     display: none;
   }
@@ -229,9 +289,36 @@
   }
 }
 
+.training__step-forest::after {
+  @include vp-1199 {
+    position: absolute;
+    right: auto;
+    top: -15vw;
+    left: 6px;
+    width: 1px;
+    height: 10vw;
+  }
+
+  @include vp-767 {
+    top: 8px;
+    left: -27px;
+    height: auto;
+  }
+}
+
 .training__step-peaks::before,
 .training__step-forest::before {
   @include vp-1199 {
     top: -40px;
+  }
+
+  @include vp-767 {
+    top: 8px;
+  }
+}
+
+.training__step-peaks::after {
+  @include vp-767 {
+    display: none;
   }
 }

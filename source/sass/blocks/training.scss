@@ -1,6 +1,6 @@
 .training {
   .container {
-    padding: 6% calc(120/1440*100%) calc(62/1440*100%);
+    padding: 4.2% calc(120/1440*100%) calc(62/1440*100%);
 
     @include vp-1199 {
       padding: 4.8% 6% 5.6%;
@@ -22,7 +22,7 @@
   line-height: 1.5;
   font-weight: 400;
   color: $color-elephant;
-  margin: 0 0 2.3vw;
+  margin: 0 0 3.3vw;
 
   @include vp-1199 {
     font-size: 2.09vw;
@@ -35,6 +35,7 @@
 
 .training__text {
   width: 70%;
+  letter-spacing: -0.15px;
 
   @include vp-1199 {
     width: 80%;
@@ -54,7 +55,7 @@
 
 .training__names {
   font-size: 1.46vw;
-  line-height: 1;
+  line-height: 1.5;
   margin: 0 0 2.5vw;
 
   @include vp-1199 {

@@ -4,7 +4,7 @@
 
 .tours__background {
   position: absolute;
-  top: calc(-18/1440*100%);
+  top: -8%;
   right: 0;
   z-index: -1;
 
@@ -183,11 +183,10 @@
   display: flex;
   flex-wrap: wrap;
   order: -1;
-  margin: 0 0 1vw;
+  margin: 0 0 1.65vw;
   font-weight: 500;
   font-size: 0.9vw;
   line-height: 1;
-  gap: 5% 5%;
 
   @include vp-1199 {
     font-size: 1.6vw;
@@ -206,8 +205,9 @@
   display: flex;
   align-items: center;
   min-width: 6vw;
-  margin: 0;
-  padding: 5% 7.1%;
+  font-size: 0.8vw;
+  margin: 0 10.9% 0 0;
+  padding: 2.8% 7.1%;
   background-color: $color-navy-blue;
   gap: 0 10%;
 
@@ -244,7 +244,7 @@
 
 .tours__days,
 .tours__nigts {
-  gap: 10%;
+  gap: 4%;
 
   @include vp-1199 {
     gap: 15%;
@@ -273,6 +273,7 @@
   min-width: 6vw;
   margin: 0;
   gap: 10%;
+  margin: 0 10.9% 0 0;
 
   @include vp-1199 {
     min-width: calc(73/768*100%);

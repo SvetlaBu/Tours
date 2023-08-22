@@ -1322,7 +1322,7 @@ button,
   /* stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
   font-family: "Montserrat", "Tahoma", sans-serif;
-  font-size: 1.25vw;
+  font-size: 1.1vw;
   color: #2D383F;
   overflow: hidden;
 }
@@ -2686,7 +2686,7 @@ button,
 
 .tours__background {
   position: absolute;
-  top: -1.25%;
+  top: -8%;
   right: 0;
   z-index: -1;
 }
@@ -2900,11 +2900,10 @@ button,
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
-  margin: 0 0 1vw;
+  margin: 0 0 1.65vw;
   font-weight: 500;
   font-size: 0.9vw;
   line-height: 1;
-  gap: 5% 5%;
 }
 @media (max-width: 1199px) {
   .tours__detalis-top {
@@ -2929,8 +2928,9 @@ button,
       -ms-flex-align: center;
           align-items: center;
   min-width: 6vw;
-  margin: 0;
-  padding: 5% 7.1%;
+  font-size: 0.8vw;
+  margin: 0 10.9% 0 0;
+  padding: 2.8% 7.1%;
   background-color: #0266C1;
   gap: 0 10%;
 }
@@ -2970,7 +2970,7 @@ button,
 
 .tours__days,
 .tours__nigts {
-  gap: 10%;
+  gap: 4%;
 }
 @media (max-width: 1199px) {
   .tours__days,
@@ -3008,6 +3008,7 @@ button,
   min-width: 6vw;
   margin: 0;
   gap: 10%;
+  margin: 0 10.9% 0 0;
 }
 @media (max-width: 1199px) {
   .tours__days {
@@ -3252,7 +3253,7 @@ button,
 }
 
 .training .container {
-  padding: 6% 8.3333333333% 4.3055555556%;
+  padding: 4.2% 8.3333333333% 4.3055555556%;
 }
 @media (max-width: 1199px) {
   .training .container {
@@ -3275,7 +3276,7 @@ button,
   line-height: 1.5;
   font-weight: 400;
   color: #2D383F;
-  margin: 0 0 2.3vw;
+  margin: 0 0 3.3vw;
 }
 @media (max-width: 1199px) {
   .training__text,
@@ -3292,6 +3293,7 @@ button,
 
 .training__text {
   width: 70%;
+  letter-spacing: -0.15px;
 }
 @media (max-width: 1199px) {
   .training__text {
@@ -3313,7 +3315,7 @@ button,
 
 .training__names {
   font-size: 1.46vw;
-  line-height: 1;
+  line-height: 1.5;
   margin: 0 0 2.5vw;
 }
 @media (max-width: 1199px) {

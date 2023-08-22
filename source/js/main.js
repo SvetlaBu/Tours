@@ -7,6 +7,7 @@ import {findVideos} from './modules/video';
 import {addAudioPlayer} from './modules/audio';
 import {addToursSlider} from './vendor/tours';
 import {addCoachesSlider} from './vendor/coaches';
+import {addReviewsSlider} from './vendor/reviews';
 
 
 // ---------------------------------
@@ -34,6 +35,7 @@ window.addEventListener('DOMContentLoaded', () => {
     addAudioPlayer();
     addToursSlider();
     addCoachesSlider();
+    addReviewsSlider();
   });
 });
 

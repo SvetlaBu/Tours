@@ -23,6 +23,7 @@
   font-weight: 400;
   color: $color-elephant;
   margin: 0 0 3.3vw;
+  letter-spacing: -0.2px;
 
   @include vp-1199 {
     font-size: 2.09vw;
@@ -73,7 +74,7 @@
   display: flex;
   justify-content: space-between;
   align-content: center;
-  margin: 0 0 2.3vw;
+  margin: 0 0 0.3vw;
 }
 
 .training__person {
@@ -86,6 +87,7 @@
 
 .training__name {
   flex: 0 0 50%;
+  margin: 0;
 
   @include vp-1199 {
     font-size: 1.83vw;
@@ -103,23 +105,29 @@
 
 .training__coaches {
   width: 100%;
+  margin-bottom: 3.2vw;
 
   @include vp-1199 {
     margin: 0 0 4.8vw;
   }
 }
 
+.training__slider {
+  margin: 0;
+  list-style: none;
+  box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
+}
+
 .training__list {
-  padding: 20px;
+  padding: 0;
   margin: 0;
   list-style: none;
   // box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
 }
 
 .training__coach {
-  padding: 1%;
-  margin-left: -10px;
-  min-height: 34vw;
+  padding: 1.6%;
+  min-height: 26vw;
   border: 1px solid $color-default-white;
   box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
 
@@ -132,15 +140,20 @@
   }
 
   img {
-    margin: 0;
+    margin: 0 0 1.2vw;
     padding: 0;
     width: 100%;
+    height: 14.7vw;
+    object-position: 12%;
     object-fit: cover;
   }
 }
 
 .training__desc {
-  font-size: 0.8vw;
+  font-size: .8vw;
+  line-height: 1.4;
+  margin: 1vw 0 0;
+  letter-spacing: 0.2px;
 
   @include vp-1199 {
     font-size: 1.57vw;
@@ -160,6 +173,10 @@
 }
 
 .training__steps {
+  margin: 0;
+  padding: 0;
+  gap: 1.4vw;
+
   @include vp-1199 {
     display: grid;
     gap: 20vw 10%;
@@ -176,8 +193,8 @@
 }
 
 .training__step {
+  flex: 0 0 24%;
   position: relative;
-  gap: 5%;
 
   @include vp-767 {
     padding-bottom: 7vw;
@@ -186,6 +203,12 @@
   &:last-of-type {
     padding-bottom: 0;
   }
+
+  svg {
+    margin: 0.7vw 0.98vw 0 0;
+    width: 2.8vw;
+    justify-self: flex-start;
+  }
 }
 
 .training__step::after,
@@ -193,7 +216,7 @@
   content: "";
   position: absolute;
   right: 0;
-  bottom: -34px;
+  bottom: 14px;
   left: -3px;
   height: 1px;
   background-color: rgba(2, 102, 193, 0.1);
@@ -201,7 +224,7 @@
 
 .training__step::before {
   content: "";
-  bottom: -41px;
+  bottom: 7px;
   left: 0;
   width: 14px;
   height: 14px;

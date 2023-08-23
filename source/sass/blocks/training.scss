@@ -219,6 +219,7 @@
   bottom: 14px;
   left: -3px;
   height: 1px;
+  width: 110%;
   background-color: rgba(2, 102, 193, 0.1);
 }
 
@@ -251,7 +252,8 @@
 }
 
 .training__step:first-of-type::after {
-  left: -50vw;
+  width: 150%;
+  left: -50%;
 
   @include vp-1199 {
     width: 47vw;

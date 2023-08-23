@@ -8,6 +8,7 @@ import {addAudioPlayer} from './modules/audio';
 import {addToursSlider} from './vendor/tours';
 import {addCoachesSlider} from './vendor/coaches';
 import {addReviewsSlider} from './vendor/reviews';
+import {addAdvantagesSlider} from './vendor/advantages';
 
 
 // ---------------------------------
@@ -22,6 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   carouselHero();
   toggleMenu();
+  addAdvantagesSlider();
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'

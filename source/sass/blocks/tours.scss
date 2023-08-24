@@ -271,9 +271,8 @@
   display: flex;
   align-items: center;
   min-width: 6vw;
-  margin: 0;
-  gap: 10%;
   margin: 0 10.9% 0 0;
+  gap: 10%;
 
   @include vp-1199 {
     min-width: calc(73/768*100%);

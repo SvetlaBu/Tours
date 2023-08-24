@@ -9,6 +9,8 @@ import {addToursSlider} from './vendor/tours';
 import {addCoachesSlider} from './vendor/coaches';
 import {addReviewsSlider} from './vendor/reviews';
 import {addAdvantagesSlider} from './vendor/advantages';
+import {addGallerySlider} from './vendor/gallery';
+import {addContactsMap} from './modules/map';
 
 
 // ---------------------------------
@@ -38,6 +40,8 @@ window.addEventListener('DOMContentLoaded', () => {
     addToursSlider();
     addCoachesSlider();
     addReviewsSlider();
+    addGallerySlider();
+    addContactsMap();
   });
 });
 

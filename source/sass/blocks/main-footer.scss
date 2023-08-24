@@ -5,15 +5,13 @@
     padding: calc(40/1440*100%) calc(120/1440*100%);
     box-sizing: border-box;
     display: grid;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
     grid-template-columns: calc(205/1200*100%) calc(587/1200*100%) calc(142/1200*100%);
-    column-gap: calc(134/1200*100%);
 
     @include vp-1199 {
       padding: calc(30/768*100%) calc(45/768*100%);
       grid-template-columns: calc(118/678*100%) calc(476/678*100%);
-      column-gap: calc(84/678*100%);
       align-content: start;
       font-size: 2.1vw;
     }
@@ -64,11 +62,20 @@
     }
   }
 
+  &__page-nav {
+    @include vp-1199 {
+      justify-self: end;
+    }
+
+    @include vp-767 {
+      justify-self: start;
+    }
+  }
+
   .nav-list {
     @include vp-1199 {
       margin: 0;
       flex-direction: row;
-      gap: calc(21/577*100%);
     }
 
     @include vp-767 {

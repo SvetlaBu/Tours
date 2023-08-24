@@ -45,8 +45,7 @@
 }
 
 .advantages__slider {
-  width: 2020px;
-  margin: 0 0 50px -410px;
+  width: 100%;
 
   @include vp-1199 {
     width: 100%;
@@ -162,7 +161,7 @@
   margin: 0;
 }
 
-.advantages__arrows {
+.advantages__arrows.buttons {
   justify-content: center;
 
   @include vp-1199 {

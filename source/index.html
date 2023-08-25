@@ -24,12 +24,12 @@
             <button class="page-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
             </button>
             <ul class="nav-list page-nav__list">
-              <li class="nav-list__item"><a class="nav-list__link" href="#">Туры</a></li>
-              <li class="nav-list__item"><a class="nav-list__link"  href="#">Обучение</a></li>
-              <li class="nav-list__item"><a class="nav-list__link" href="#">О нас</a></li>
-              <li class="nav-list__item"><a class="nav-list__link" href="#">Отзывы</a></li>
-              <li class="nav-list__item"><a class="nav-list__link" href="#">Фотографии</a></li>
-              <li class="nav-list__item"><a class="nav-list__link" href="#">Контакты</a></li>
+              <li class="nav-list__item"><a class="nav-list__link" href="#tours">Туры</a></li>
+              <li class="nav-list__item"><a class="nav-list__link" href="#training">Обучение</a></li>
+              <li class="nav-list__item"><a class="nav-list__link" href="#about">О нас</a></li>
+              <li class="nav-list__item"><a class="nav-list__link" href="#reviews">Отзывы</a></li>
+              <li class="nav-list__item"><a class="nav-list__link" href="#gallery">Фотографии</a></li>
+              <li class="nav-list__item"><a class="nav-list__link" href="#contacts">Контакты</a></li>
             </ul>
           </nav>
           <p class="main-header__phone">
@@ -42,18 +42,40 @@
           <h1 class="visually-hidden">Уникальные маршруты путешествий по горам России</h1>
           <div class="hero__container">
             <div class="hero__wrapper">
-              <div class="hero__slider swiper" id="carousel" pagination="true">
+              <div class="hero__slider swiper" id="carousel">
                 <div class="hero__group swiper-wrapper">
                   <section class="hero__item hero__item--1 swiper-slide" tabindex="0">
+                    <picture class="hero__background">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="./img/peaks-mobile.webp, ./img/peaks-mobile@2x.webp 2x" width="320" height="568">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="./img/peaks-tablet.webp, ./img/peaks-tablet@2x.webp 2x" width="768" height="1024">
+                      <source type="image/webp" srcset="./img/peaks-desktop.webp, ./img/peaks-desktop@2x.webp 2x" width="1440" height="800">
+                      <source media="(max-width: 767px)" srcset="./img/peaks-mobile.jpg, ./img/peaks-mobile.jpg 2x" width="320" height="568">
+                      <source media="(max-width: 1199px)" srcset="./img/peaks-tablet.jpg, ./img/peaks-tablet.jpg 2x" width="768" height="1024">
+                      <img src="./img/peaks-desktop.jpg" srcset="./img/peaks-desktop@2x.jpg 2x" width="1440" height="800" alt="Фон: верхушки гор под синим небом.">
+                    </picture>
                     <div class="hero__desc">
                       <h2 class="hero__title">
                         Захватывающие вершины Кавказа
                       </h2>
                       <p class="hero__text">В&nbsp;сопровождении опытных гидов вы&nbsp;пройдете через потрясающие ландшафты и&nbsp;совершите восход на&nbsp;вершину горы Чегет.</p>
-                      <a class="hero__view" href="">Смотреть тур</a>
+                      <a class="hero__view action" href="">Смотреть тур</a>
                       <div class="hero__details">
-                        <p class="hero__info">6 дней/5 ночей</p>
-                        <p class="hero__info hero__info--level">Высокая сложность</p>
+                        <p class="hero__info">
+                          <svg width="15" height="20">
+                            <use xlink:href="img/sprite/sprite.svg#moon"></use>
+                          </svg>
+                          <span>
+                            6 дней/5 ночей
+                          </span>
+                        </p>
+                        <p class="hero__info hero__info--level">
+                          <svg width="15" height="20">
+                            <use xlink:href="img/sprite/sprite.svg#level"></use>
+                          </svg>
+                          <span>
+                            Высокая сложность
+                          </span>
+                        </p>
                       </div>
                     </div>
                     <div class="hero__video" id="video">
@@ -71,15 +93,37 @@
                     </div>
                   </section>
                   <section class="hero__item hero__item--2 swiper-slide" tabindex="0">
+                    <picture class="hero__background">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="./img/kamchatka-mobile.webp, ./img/kamchatka-mobile@2x.webp 2x" width="320" height="568">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="./img/kamchatka-tablet.webp, ./img/kamchatka-tablet@2x.webp 2x" width="768" height="1024">
+                      <source type="image/webp" srcset="./img/kamchatka-desktop.webp, ./img/kamchatka-desktop@2x.webp 2x" width="1440" height="800">
+                      <source media="(max-width: 767px)" srcset="./img/kamchatka-mobile.jpg, ./img/kamchatka-mobile.jpg 2x" width="320" height="568">
+                      <source media="(max-width: 1199px)" srcset="./img/kamchatka-tablet.jpg, ./img/kamchatka-tablet.jpg 2x" width="768" height="1024">
+                      <img src="./img/kamchatka-desktop.jpg" srcset="./img/kamchatka-desktop@2x.jpg 2x" width="1440" height="800" alt="Фон: большая гора с заснеженной верхушкой и клубами тумана у подножия.">
+                    </picture>
                     <div class="hero__desc">
                       <h2 class="hero__title">
                         Невероятная природа Камчатки
                       </h2>
                       <p class="hero__text">Незабываемое приключение, во&nbsp;время которого вы&nbsp;отправитесь в&nbsp;путешествие по&nbsp;одному из&nbsp;самых нетронутых уголков дикой природы в&nbsp;мире.</p>
-                      <a class="hero__view" href="">Смотреть тур</a>
+                      <a class="hero__view action" href="">Смотреть тур</a>
                       <div class="hero__details">
-                        <p class="hero__info">9 дней/10 ночей</p>
-                        <p class="hero__info hero__info--level">Средняя сложность</p>
+                        <p class="hero__info">
+                          <svg width="15" height="20">
+                            <use xlink:href="img/sprite/sprite.svg#moon"></use>
+                          </svg>
+                          <span>
+                            10 дней/9 ночей
+                          </span>
+                        </p>
+                        <p class="hero__info hero__info--level">
+                          <svg width="15" height="20">
+                            <use xlink:href="img/sprite/sprite.svg#level"></use>
+                          </svg>
+                          <span>
+                            Средняя сложность
+                          </span>
+                        </p>
                       </div>
                     </div>
                     <div class="hero__pic">
@@ -92,15 +136,37 @@
                     </div>
                   </section>
                   <section class="hero__item hero__item--3 swiper-slide" tabindex="0">
+                    <picture class="hero__background">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="./img/altai-mobile.webp, ./img/altai-mobile@2x.webp 2x" width="320" height="568">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="./img/altai-tablet.webp, ./img/altai-tablet@2x.webp 2x" width="768" height="1024">
+                      <source type="image/webp" srcset="./img/altai-desktop.webp, ./img/altai-desktop@2x.webp 2x" width="1440" height="800">
+                      <source media="(max-width: 767px)" srcset="./img/altai-mobile.jpg, ./img/altai-mobile.jpg 2x" width="320" height="568">
+                      <source media="(max-width: 1199px)" srcset="./img/altai-tablet.jpg, ./img/altai-tablet.jpg 2x" width="768" height="1024">
+                      <img src="./img/altai-desktop.jpg" srcset="./img/altai-desktop@2x.jpg 2x" width="1440" height="800" alt="Фон: высокие горы с зелеными долинами и извилистой рекой у подножия.">
+                    </picture>
                     <div class="hero__desc">
                       <h2 class="hero__title">
                         Магические пейзажи Алтайского Края
                       </h2>
                       <p class="hero__text">Алтайский трекинг-тур&nbsp;&mdash; <span class="hero__space"></span>это захватывающее приключение с&nbsp;посещением магических и&nbsp;захватывающих дух ландшафтов Алтайских гор.</p>
-                      <a class="hero__view" href="">Смотреть тур</a>
+                      <a class="hero__view action href="">Смотреть тур</a>
                       <div class="hero__details">
-                        <p class="hero__info">8 дней/7 ночей</p>
-                        <p class="hero__info hero__info--level">Легкая сложность</p>
+                        <p class="hero__info">
+                          <svg width="15" height="20">
+                            <use xlink:href="img/sprite/sprite.svg#moon"></use>
+                          </svg>
+                          <span>
+                            8 дней/7 ночей
+                          </span>
+                        </p>
+                        <p class="hero__info hero__info--level">
+                          <svg width="15" height="20">
+                            <use xlink:href="img/sprite/sprite.svg#level"></use>
+                          </svg>
+                          <span>
+                            Лёгкая сложность
+                          </span>
+                        </p>
                       </div>
                     </div>
                     <div class="hero__audio audio">
@@ -142,7 +208,7 @@
                               <use href="./img/sprite.svg#prev"></use>
                             </svg>
                           </button>
-                          <button class="audio__button audio__play" type="button" aria-label="Воспроизвести." data-src="https://music.yandex.ru/iframe/#album/25474374">
+                          <button class="audio__button audio__play" type="button" aria-label="Воспроизвести." data-src="https://music.yandex.ru/album/25474374/track/112912322">
                             <svg width="47" height="47" aria-hidden="true" focusable="false">
                               <use href="./img/sprite.svg#play-audio"></use>
                             </svg>
@@ -161,8 +227,8 @@
                       </div>
                     </div>
                   </section>
-                  <div class="hero__pagination swiper-pagination"></div>
                 </div>
+                <div class="hero__pagination swiper-pagination"></div>
               </div>
             </div>
           </div>
@@ -550,7 +616,7 @@
             <img src="./img/clouds.png" srcset="./img/clouds@2x.png 2x" width="602" height="1364" alt="Фон: Вид на горы сквозь облака." loading="lazy">
           </picture>
         </section>
-        <section class="training">
+        <section class="training" id="training">
           <div class="container">
             <h3 class="training__title headline"  data-shadow="Обучение">Обучение</h3>
             <p class="training__text">Обучение проводится квалифицированными специалистами, за&nbsp;плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и&nbsp;других.</p>
@@ -696,7 +762,7 @@
             </section>
           </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
           <div class="container">
             <picture>
               <source type="image/webp" srcset="./img/about.webp, ./img/about@2x.webp 2x" width="808" height="474">
@@ -1053,11 +1119,11 @@
                   <input type="tel" id="tel" placeholder="Телефон" name="number" required>
                 </label>
               </div>
-              <button class="connection__submit" type="submit">Отправить</button>
+              <button class="connection__submit action" type="submit">Отправить</button>
             </form>
           </div>
         </section>
-        <section class="contacts">
+        <section class="contacts" id="contacts">
           <div class="container">
             <address class="contacts__info">
               <h4 class="contacts__title headline"  data-shadow="Контакты">Контакты</h4>
@@ -1112,12 +1178,12 @@
           </a>
           <nav class="main-footer__page-nav page-nav">
             <ul class="nav-list page-nav__list">
-              <li class="nav-list__item"><a class="nav-list__link" href="#">Туры</a></li>
-              <li class="nav-list__item"><a class="nav-list__link"  href="#">Обучение</a></li>
-              <li class="nav-list__item"><a class="nav-list__link" href="#">О нас</a></li>
-              <li class="nav-list__item"><a class="nav-list__link" href="#">Отзывы</a></li>
-              <li class="nav-list__item"><a class="nav-list__link" href="#">Фотографии</a></li>
-              <li class="nav-list__item"><a class="nav-list__link" href="#">Контакты</a></li>
+              <li class="nav-list__item"><a class="nav-list__link" href="#tours">Туры</a></li>
+              <li class="nav-list__item"><a class="nav-list__link"  href="#training">Обучение</a></li>
+              <li class="nav-list__item"><a class="nav-list__link" href="#about">О нас</a></li>
+              <li class="nav-list__item"><a class="nav-list__link" href="#reviews">Отзывы</a></li>
+              <li class="nav-list__item"><a class="nav-list__link" href="#gallery">Фотографии</a></li>
+              <li class="nav-list__item"><a class="nav-list__link" href="#contacts">Контакты</a></li>
             </ul>
           </nav>
           <p class="main-footer__phone">

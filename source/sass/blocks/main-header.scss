@@ -61,7 +61,10 @@
   a {
     display: block;
     color: inherit;
+  }
 
+  &__logo,
+  &__phone {
     &:hover,
     &:focus-visible,
     &:focus {

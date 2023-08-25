@@ -26,6 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
   carouselHero();
   toggleMenu();
   addAdvantagesSlider();
+  addAudioPlayer();
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
@@ -36,7 +37,6 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     findVideos();
-    addAudioPlayer();
     addToursSlider();
     addCoachesSlider();
     addReviewsSlider();

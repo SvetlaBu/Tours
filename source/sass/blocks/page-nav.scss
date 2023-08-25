@@ -44,8 +44,9 @@
 
   @include vp-1199 {
     display: block;
-    position: absolute;
+    position: relative;
     z-index: 4;
+    padding: 20px;
     top: 0;
     border: none;
     outline: none;
@@ -70,16 +71,17 @@
     position: absolute;
     z-index: 4;
     top: 0;
+    left: 0;
     background-color: $color-default-white;
-    width: 18px;
-    height: 2px;
+    width: 1.1vw;
+    height: 0.2vw;
     cursor: pointer;
   }
 
   &::after {
-    top: 12px;
-    width: 26px;
-    box-shadow: 0 -22px 0 0 $color-default-white;
+    bottom: 0.6vw;
+    width: 2.95vw;
+    box-shadow: 0 -3vw 0 0 #fff;
   }
 }
 

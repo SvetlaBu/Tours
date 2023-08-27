@@ -9,7 +9,7 @@
 
     @include vp-1199 {
       grid-template-columns: 1fr;
-      padding: 4.8% 6% 5.6%;
+      padding: 12.4% 6% 5.6%;
     }
 
     @include vp-767 {
@@ -23,16 +23,22 @@
 }
 
 .contacts__title {
+  margin-bottom: 4%;
+
   @include vp-1199 {
     grid-row: 1/2;
+    margin-bottom: 2.8%;
   }
 }
 
 .contacts__text {
   width: 86%;
+  letter-spacing: -0.1px;
+  margin: 0 0 7.3%;
 
   @include vp-1199 {
     grid-row: 2/3;
+    margin: 0 0 5.3%;
   }
 
   @include vp-767 {
@@ -44,16 +50,18 @@
 .contacts__item {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 4.6%;
   flex-direction: row;
   align-items: center;
+  font-size: 1.3vw;
   gap: 2vw;
 
   @include vp-1199 {
     display: inline-flex;
     grid-row: 3/4;
     font-size: 1.83vw;
-    gap: 1vw;
-    width: 25%;
+    gap: 1.4vw;
+    width: 27%;
   }
 
   @include vp-767 {
@@ -65,7 +73,8 @@
 
   &:last-of-type {
     @include vp-1199 {
-      width: 45%;
+      width: 44.5%;
+      gap: 0.6vw;
     }
 
     @include vp-767 {
@@ -74,6 +83,16 @@
 
     p {
       width: 58%;
+
+      @include vp-1199 {
+        width: 86%;
+      }
+    }
+
+    svg {
+      @include vp-1199 {
+        margin-left: 5%;
+      }
     }
   }
 
@@ -81,20 +100,43 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    margin: 0;
   }
 
   b {
     font-weight: 600;
   }
+
+  svg {
+    scale: 1.25;
+
+    @include vp-1199 {
+      scale: 1.1;
+      align-self: start;
+      margin-top: 2%;
+    }
+  }
+
+  span,
+  a {
+    font-size: 1.12vw;
+    line-height: 1.8;
+    letter-spacing: -0.06px;
+
+    @include vp-1199 {
+      font-size: 1.8vw;
+    }
+  }
 }
 
 .contacts__location {
-  width: 80%;
-  height: 26vw;
+  width: 100%;
+  height: 22.6vw;
+  margin-bottom: 2vw;
   align-self: flex-end;
 
   @include vp-1199 {
     width: 100%;
-    height: 38vw;
+    height: 45vw;
   }
 }

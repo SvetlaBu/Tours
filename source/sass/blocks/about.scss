@@ -12,7 +12,7 @@
 }
 
 .about__title {
-  margin: 0 0 5.8vw 0;
+  margin: 0 0 4.9vw;
 }
 
 .about__pic,
@@ -24,8 +24,11 @@
 }
 
 .about__pic {
+  top: 1vw;
+  width: 56%;
+
   @include vp-1199 {
-    width: 68vw;
+    width: 62.9vw;
   }
 
   @include vp-767 {
@@ -42,7 +45,11 @@
 .about__info {
   display: flex;
   flex-direction: column;
-  padding: 0 calc(120/1440*100%) 0 50vw;
+  padding: 3.8% 8.3% 0 51%;
+
+  @include vp-1199 {
+    padding: 0.7% 0 0 55.2%;
+  }
 
   @include vp-767 {
     padding: 0 5%;
@@ -52,11 +59,11 @@
 .about__names {
   font-size: 1.46vw;
   line-height: 1;
-  margin: 0 auto 2.5vw 0;
+  margin: 0 auto 1vw 0;
 
   @include vp-1199 {
     font-size: 2.35vw;
-    margin: 0 auto 5.5vw 0;
+    margin: 0 auto 1.7vw 0;
   }
 
   @include vp-767 {
@@ -65,10 +72,17 @@
 }
 
 .about__text {
-  margin: 0 0 3.5vw 0;
+  margin: 0 0 2.1vw;
+  line-height: 1.57;
+  font-size: 0.98vw;
+  width: 95%;
+  letter-spacing: -0.2px;
 
   @include vp-1199 {
     font-size: 1.83vw;
+    margin: 0 0 3.9vw;
+    letter-spacing: -0.33px;
+    width: 100%;
   }
 
   @include vp-767 {
@@ -78,4 +92,5 @@
 
 .about__text:last-of-type {
   margin-bottom: 0;
+  width: 100%;
 }

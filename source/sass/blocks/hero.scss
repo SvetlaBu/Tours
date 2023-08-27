@@ -57,7 +57,7 @@
     margin-bottom: 2.45vw;
 
     @include vp-1199 {
-      margin: 0 auto 3.5vw;
+      margin: 0 auto 3.6vw;
       letter-spacing: 0.05em;
       font-size: 2vw;
       width: 70%;
@@ -77,7 +77,7 @@
       padding: 12.7vw 8.3vw 7.6vw;
 
       @include vp-1199 {
-        padding: 12.7vw 8.3vw 34vw;
+        padding: 12.7vw 8.3vw 3vw;
       }
 
       @include vp-767 {
@@ -120,7 +120,7 @@
   &--3 {
     @include vp-1199 {
       text-align: center;
-      padding: 12.7vw 5.3vw 36.8vw;
+      padding: 12.7vw 5.3vw 3.8vw;
     }
 
     .hero__title {
@@ -153,11 +153,11 @@
     }
 
     @include vp-1199 {
-      padding: 12.7vw 8.3vw 34vw;
+      padding: 12.7vw 8.3vw 3vw;
     }
 
     @include vp-767 {
-      padding: 42.7vw 4.6vw 38vw;
+      padding: 42.7vw 4.6vw 8vw;
     }
   }
 }
@@ -202,6 +202,7 @@
 
   @include vp-1199 {
     text-align: center;
+    padding: 12.5vw 8.25vw 0.8vw;
   }
 
   @include vp-767 {
@@ -251,7 +252,7 @@
   position: relative;
 
   @include vp-1199 {
-    height: 40vw;
+    height: 39vw;
   }
 
   picture {
@@ -312,7 +313,7 @@
     right: 0;
     top: 4.8vw;
     width: 58vw;
-    padding-bottom: 48%;
+    padding-bottom: 39%;
     margin: 0 auto;
   }
 
@@ -364,10 +365,15 @@
   svg {
     width: 1.1vw;
     height: 1.3vw;
+
+    @include vp-1199 {
+      width: 100%;
+      height: 100%;
+    }
   }
 
   @include vp-1199 {
-    padding: 2.4vw 2.4vw 2.4vw 2.6vw;
+    padding: 2.2vw 2.4vw 2.2vw 2.8vw;
   }
 }
 
@@ -399,7 +405,7 @@
     text-align: center;
     width: 100%;
     right: 0;
-    bottom: 12.2vw;
+    bottom: 11.7vw;
   }
 
   @include vp-767 {

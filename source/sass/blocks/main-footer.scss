@@ -7,11 +7,11 @@
     display: grid;
     justify-content: space-between;
     align-content: center;
-    grid-template-columns: calc(205/1200*100%) calc(587/1200*100%) calc(142/1200*100%);
+    grid-template-columns: 17.08% 54.92% 11.83%;
 
     @include vp-1199 {
-      padding: calc(30/768*100%) calc(45/768*100%);
-      grid-template-columns: calc(118/678*100%) calc(476/678*100%);
+      padding: 7.4% 5.86%;
+      grid-template-columns: 17.4% 80.2%;
       align-content: start;
       font-size: 2.1vw;
     }
@@ -54,7 +54,7 @@
 
       @include vp-1199 {
         height: auto;
-        width: 18vw;
+        width: 15.5vw;
       }
 
       @include vp-767 {
@@ -84,6 +84,9 @@
   &__page-nav {
     @include vp-1199 {
       justify-self: end;
+      align-self: flex-start;
+      margin-top: 0.9vw;
+      width: 90%;
     }
 
     @include vp-767 {
@@ -94,6 +97,11 @@
   .nav-list {
     @include vp-1199 {
       margin: 0;
+      gap: 1.55%;
+      line-height: 1;
+      width: 100%;
+      gap: 2%;
+      align-items: end;
       flex-direction: row;
     }
 
@@ -111,7 +119,8 @@
 
     &__item {
       @include vp-1199 {
-        font-size: 1.6vw;
+        line-height: 1;
+        font-size: 1.8vw;
         opacity: 0.5;
       }
 
@@ -127,6 +136,8 @@
     font-size: 1.23vw;
     line-height: 1.5;
     font-weight: 600;
+    margin: 0;
+    align-self: center;
 
     a {
       &:hover,
@@ -152,9 +163,14 @@
 
   .social,
   &__info {
+    margin-top: 0.2vw;
     grid-column: 1/-1;
     grid-row: 2/3;
     justify-self: center;
+
+    @include vp-1199 {
+      margin-top: 2.8vw;
+    }
 
     @include vp-767 {
       grid-row: 3/4;
@@ -163,12 +179,14 @@
   }
 
   &__info {
+    margin-top: 0.8vw;
     grid-row: 3/4;
-    font-size: 0.9vw;
+    font-size: 0.81vw;
     font-weight: 300;
 
     @include vp-1199 {
-      font-size: 1.6vw;
+      font-size: 1.53vw;
+      margin-top: 1.5vw;
       opacity: 0.5;
     }
 

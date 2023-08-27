@@ -31,13 +31,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 312px;
-  padding-bottom: 307px;
+  padding: 21.6% 0 11.6%;
+  margin: 0 0 9.5vw;
   color: $color-default-white;
 
   @include vp-1199 {
-    padding-top: 195px;
-    padding-bottom: 183px;
+    padding: 25.4% 0 12.6%;
   }
 
   @include vp-767 {
@@ -68,8 +67,8 @@
   text-align: center;
 
   @include vp-1199 {
-    max-width: 50%;
-    margin: 0 1px 29px 0;
+    max-width: 41%;
+    margin: 0 0 3.7% 0;
   }
 
   @include vp-767 {
@@ -87,13 +86,15 @@
 .connection form {
   display: flex;
   justify-content: center;
-  gap: 0 30px;
+  width: 79%;
+  gap: 1vw 3%;
 
   @include vp-1199 {
     align-self: stretch;
-    margin: 0 206px;
+    margin: 0 auto;
     flex-direction: column;
-    gap: 7px 0;
+    width: 35%;
+    gap: 0.9vw 0;
   }
 
   @include vp-767 {
@@ -106,9 +107,8 @@
   background-color: $color-navy-blue;
   display: flex;
   justify-content: center;
-  padding: 24px 0;
-  min-width: 20%;
-  margin: 0 0 9.5vw;
+  padding: 2% 0 1.8%;
+  min-width: 20.9%;
   outline: none;
   box-shadow: none;
   border: 1px solid $color-navy-blue;
@@ -116,8 +116,8 @@
   @include vp-1199 {
     width: 100%;
     font-size: 2.1vw;
-    margin: 0 auto 1vw;
-    padding: 20px 20px 2.09vw 20px;
+    margin: 1vw auto 1vw;
+    padding: 2.3vw 2.09vw 2.3vw;
   }
 
   @include vp-767 {

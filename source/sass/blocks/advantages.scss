@@ -16,12 +16,10 @@
 }
 
 .advantages > .container {
-  padding-top: 68px;
-  padding-bottom: 65px;
+  padding: 7.2% 0 8.3%;
 
   @include vp-1199 {
-    padding-top: 46px;
-    padding-bottom: 42px;
+    padding: 9.9% 0 8.3%;
   }
 
   @include vp-767 {
@@ -45,11 +43,11 @@
 }
 
 .advantages__slider {
-  width: 100%;
+  margin-left: -20%;
 
   @include vp-1199 {
-    width: 100%;
-    margin: 0;
+    width: 88%;
+    margin: 0 auto;
   }
 }
 
@@ -62,7 +60,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 4.3vw 3.96vw;
   }
 
   @include vp-767 {
@@ -74,10 +72,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 380px;
+  width: 22%;
   height: auto;
-  margin-right: 30px;
-  padding: 39px 20px;
+  margin-right: 1.74%;
+  padding: 2.26% 1.16%;
   background-color: $color-default-white;
   border: 1px solid rgba($color-navy-blue, 0.1);
 
@@ -95,8 +93,8 @@
 }
 
 .advantages__icon {
-  margin: 0 0 30px;
-  padding: 15px;
+  margin: 0 0 2.24vw;
+  padding: 0.99vw;
   color: $color-navy-blue;
   border: 1px solid $color-navy-blue;
 
@@ -106,7 +104,7 @@
 
   @include vp-1199 {
     margin: 0 0 26px;
-    padding: 13px;
+    padding: 1.7vw 1.6vw;
 
     svg {
       width: 20px;
@@ -133,9 +131,9 @@
   text-align: center;
 
   @include vp-1199 {
-    margin: 0 0 14px;
-    font-size: 16px;
-    line-height: 16px;
+    margin: 0 0 1.83vw;
+    font-size: 2.09vw;
+    line-height: 1;
   }
 
   @include vp-767 {
@@ -152,8 +150,9 @@
   text-align: center;
 
   @include vp-1199 {
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 1.6vw;
+    line-height: 1.42;
+    letter-spacing: -0.35px;
   }
 }
 
@@ -163,6 +162,7 @@
 
 .advantages__arrows.buttons {
   justify-content: center;
+  margin: 3.4vw 0 0;
 
   @include vp-1199 {
     display: none;

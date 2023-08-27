@@ -1,9 +1,9 @@
 .training {
   .container {
-    padding: 4.2% calc(120/1440*100%) calc(62/1440*100%);
+    padding: 4.4% calc(120/1440*100%) calc(62/1440*100%);
 
     @include vp-1199 {
-      padding: 4.8% 6% 5.6%;
+      padding: 5.5% 6% 2.6%;
     }
 
     @include vp-767 {
@@ -14,6 +14,10 @@
 
 .training__title {
   margin: 0 0 2.3vw;
+
+  @include vp-1199 {
+    margin: 0 0 2.8vw;
+  }
 }
 
 .training__text,
@@ -40,6 +44,7 @@
 
   @include vp-1199 {
     width: 80%;
+    margin: 0 0 7.3vw;
   }
 }
 
@@ -47,6 +52,7 @@
   @include vp-1199 {
     font-size: 1.83vw;
     width: 70%;
+    margin: 0 1.2vw 4vw;
   }
 
   @include vp-767 {
@@ -75,6 +81,10 @@
   justify-content: space-between;
   align-content: center;
   margin: 0 0 0.3vw;
+
+  @include vp-1199 {
+    margin: 0 0 3.2vw;
+  }
 }
 
 .training__person {
@@ -83,6 +93,10 @@
   font-size: 1.46vw;
   line-height: 1;
   justify-content: space-between;
+
+  @include vp-1199 {
+    line-height: 1.22;
+  }
 }
 
 .training__name {
@@ -100,7 +114,10 @@
 
 .training__link {
   align-self: center;
-  border: 1px solid rgba(2, 102, 193, 0.1);
+
+  svg {
+    border: 1px solid rgba(2, 102, 193, 0.1);
+  }
 }
 
 .training__coaches {
@@ -125,13 +142,14 @@
 }
 
 .training__item {
-  padding: 1.6%;
+  padding: 1.5%;
   min-height: 26vw;
   border: 1px solid $color-default-white;
   box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
 
   @include vp-1199 {
-    min-height: 54vw;
+    padding: 1.9% 1.9% 1% 1.9%;
+    min-height: 53.5vw;
   }
 
   @include vp-767 {
@@ -142,20 +160,29 @@
     margin: 0 0 1.2vw;
     padding: 0;
     width: 100%;
-    height: 14.7vw;
+    min-height: 14.7vw;
     object-position: 12%;
     object-fit: cover;
+
+    @include vp-1199 {
+      min-height: 27.5vw;
+      object-position: 57%;
+      margin: 0 0 2.2vw;
+    }
   }
 }
 
 .training__desc {
-  font-size: .8vw;
+  font-size: 0.8vw;
   line-height: 1.4;
   margin: 1vw 0 0;
   letter-spacing: 0.2px;
 
   @include vp-1199 {
     font-size: 1.57vw;
+    line-height: 1.5;
+    margin: 1.4vw 0;
+    letter-spacing: -0.1px;
   }
 
   @include vp-767 {
@@ -178,9 +205,10 @@
 
   @include vp-1199 {
     display: grid;
-    gap: 20vw 10%;
+    gap: 8.2vw 5%;
     grid-template-columns: 1fr 1fr;
     grid-auto-flow: row;
+    padding: 5% 0;
   }
 
   @include vp-767 {
@@ -251,7 +279,7 @@
 }
 
 .training__step:first-of-type::after {
-  width: 150%;
+  width: 160%;
   left: -50%;
 
   @include vp-1199 {
@@ -295,7 +323,7 @@
 .training__step-peaks::after,
 .training__step-forest::after {
   @include vp-1199 {
-    top: -34px;
+    top: -22px;
   }
 
   @include vp-767 {
@@ -318,10 +346,10 @@
   @include vp-1199 {
     position: absolute;
     right: auto;
-    top: -15vw;
+    top: -100%;
     left: 6px;
     width: 1px;
-    height: 10vw;
+    height: 7vw;
   }
 
   @include vp-767 {
@@ -334,7 +362,7 @@
 .training__step-peaks::before,
 .training__step-forest::before {
   @include vp-1199 {
-    top: -40px;
+    top: -30px;
   }
 
   @include vp-767 {

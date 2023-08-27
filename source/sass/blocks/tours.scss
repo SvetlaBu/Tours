@@ -31,7 +31,7 @@
   padding: 5.8% calc(120/1440*100%) calc(62/1440*100%);
 
   @include vp-1199 {
-    padding: 4.8% 6% 5.6%;
+    padding: 10% 6% 5.6%;
   }
 
   @include vp-767 {
@@ -46,7 +46,8 @@
   margin: 0 0 4.5%;
 
   @include vp-1199 {
-    margin: 0 0 6%;
+    margin: 0 0 5.6%;
+    align-items: flex-start;
   }
 
   @include vp-767 {
@@ -55,7 +56,11 @@
   }
 }
 
-.tours__title {
+.tours__title.headline {
+  @include vp-1199 {
+    margin-top: 0.7vw;
+  }
+
   @include vp-767 {
     width: 60%;
   }
@@ -65,11 +70,17 @@
   margin: 0 0 4.3%;
 
   @include vp-1199 {
-    margin: 0 5px 7.9% calc(7/768*100%);
+    margin: 0 5px 7.5% calc(7/768*100%);
   }
 
   @include vp-767 {
     margin: 0 0 9.9% 0;
+  }
+}
+
+.tours__arrows {
+  @include vp-1199 {
+    margin-top: 0.1vw;
   }
 }
 
@@ -136,7 +147,8 @@
   padding: 7.6% 6.5% 7.6% 5.5%;
 
   @include vp-1199 {
-    padding: 7.6% 7% 8.2% 5.5%;
+    padding: 7.6% 5.8% 8.6% 5.5%;
+
   }
 
   @include vp-767 {
@@ -152,6 +164,14 @@
   line-height: 1;
   letter-spacing: -0.5px;
 
+  @include vp-1199 {
+    max-width: 86%;
+    font-size: 2.95vw;
+    line-height: 1.15;
+    margin: 0 0 5vw;
+    letter-spacing: 1px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -160,12 +180,18 @@
     width: calc(80/1440*100%);
     height: 1px;
     background-color: rgba($color-default-white, 0.2);
+
+    @include vp-1199 {
+      bottom: -40%;
+      width: 32%;
+    }
   }
 
   @include vp-1199 {
     max-width: 90%;
     font-size: 3.1vw;
-    margin: 0 0 5.9vw;
+    line-height: 1.1;
+    letter-spacing: 0.4px;
   }
 
   @include vp-767 {
@@ -193,7 +219,7 @@
   @include vp-1199 {
     font-size: 1.6vw;
     gap: 6%;
-    margin: 0 0 2.5vw;
+    margin: 0 0 2.95vw;
   }
 
   @include vp-767 {
@@ -218,8 +244,8 @@
     height: 1vw;
 
     @include vp-1199 {
-      width: 2vw;
-      height: 2vw;
+      width: auto;
+      height: auto;
     }
 
     @include vp-767 {
@@ -229,8 +255,12 @@
   }
 
   @include vp-1199 {
-    min-width: auto;
-    padding: 5% 8%;
+    padding: 3% 5.5%;
+    min-width: 35%;
+    font-size: 1.4vw;
+    letter-spacing: 0.7px;
+    gap: 1vw 10%;
+    margin: 0 0 0 0;
   }
 
   @include vp-767 {
@@ -244,7 +274,8 @@
   gap: 1vw;
 
   @include vp-1199 {
-    gap: 15%;
+    gap: 12%;
+    min-width: 24%;
   }
 
   svg {
@@ -252,12 +283,10 @@
 
     @include vp-1199 {
       width: 2.8vw;
-      height: 2.8vw;
     }
 
     @include vp-767 {
       width: 6vw;
-      height: 6vw;
     }
   }
 }
@@ -269,6 +298,12 @@
   margin: 0 11.2% 0 0;
   min-width: 20%;
   gap: 18%;
+
+  @include vp-1199 {
+    margin: 0 2.2% 0 0;
+    gap: 12%;
+    min-width: 26%;
+  }
 }
 
 .tours__days-text {
@@ -291,17 +326,33 @@
 
 .tours__item--belughah,
 .tours__item--fisht {
+  .tours__place {
+    @include vp-1199 {
+      min-width: 33%;
+    }
+  }
+
   .tours__detalis {
     padding: 7.6% 5.8% 7.6% 5.5%;
+
+    @include vp-1199 {
+      padding: 7.6% 5.8% 8.6% 5.5%;
+    }
   }
 
   .tours__days {
     margin: 0 8% 0 0;
-    gap: 5%;
   }
 
+  .tours__days,
   .tours__nights {
     gap: 0.5vw;
+
+    @include vp-1199 {
+      margin: 0 0 0 0;
+      gap: 12%;
+      min-width: 26.5%;
+    }
   }
 
   .tours__days-text {
@@ -379,6 +430,12 @@
   @include vp-767 {
     margin-left: 0;
   }
+
+  .tours__text {
+    @include vp-1199 {
+      margin-top: 1vw;
+    }
+  }
 }
 
 .tours__text {
@@ -410,7 +467,7 @@
   align-items: center;
   text-transform: uppercase;
   letter-spacing: 0.64px;
-  gap: 1.3%;
+  gap: 1.8%;
   outline: none;
   transition: color $trans-default;
 

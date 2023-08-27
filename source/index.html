@@ -681,7 +681,7 @@
                         </svg>
                       </a>
                     </div>
-                    <p class="training__desc">Участники говорят, что Надежда ответственная, приятная в&nbsp;общении, и&nbsp;в&nbsp;поездках с&nbsp;ней чувствуешь себя спокойно и&nbsp;уверенно.</p>
+                    <p class="training__desc">Участники говорят, что Надежда ответственная, приятная в&nbsp;общении, и&nbsp;в поездках с&nbsp;ней чувствуешь себя спокойно и&nbsp;уверенно.</p>
                   </li>
                   <li class="training__item swiper-slide" tabindex="0">
                     <picture>
@@ -765,12 +765,16 @@
         <section class="about" id="about">
           <div class="container">
             <picture>
-              <source type="image/webp" srcset="./img/about.webp, ./img/about@2x.webp 2x" width="808" height="474">
-              <img class="about__pic" src="./img/about.jpg" srcset="./img/about@2x.jpg 2x" width="808" height="474" alt="Фото группы туристов, идущих по горам." loading="lazy">
+              <source type="image/webp" media="(max-width: 767px)" srcset="./img/about-mobile.webp, ./img/about-mobile@2x.webp 2x" width="176" height="595">
+              <source type="image/webp" media="(max-width: 1199px)" srcset="./img/about.webp, ./img/about@2x.webp 2x" width="294" height="1364">
+              <source type="image/webp" srcset="./img/about-desktop.webp, ./img/about-desktop@2x.webp 2x" width="602" height="1364">
+              <source media="(max-width: 767px)" srcset="./img/about-mobile.png, ./img/about-mobile@2x.png 2x" width="176" height="595">
+              <source media="(max-width: 1199px)" srcset="./img/about.png, ./img/about@2x.png 2x" width="808" height="474">
+              <img class="about__pic" src="./img/about-desktop.png" srcset="./img/about-desktop@2x.png 2x" width="808" height="474" alt="Группа туристов спускается по горной тропе." loading="lazy">
             </picture>
             <picture>
-              <source type="image/webp" srcset="./img/about-cloud.webp, ./img/about-cloud@2x.webp 2x" width="808" height="474">
-              <img class="about__decor" src="./img/about-cloud.png" srcset="./img/about-cloud@2x.png 2x" width="808" height="474" alt="Серое облако." loading="lazy">
+              <source type="image/webp" srcset="./img/about-cloud.webp, ./img/about-cloud@2x.webp 2x" width="840" height="280">
+              <img class="about__decor" src="./img/about-cloud.png" srcset="./img/about-cloud@2x.png 2x" width="840" height="280" alt="Серое облако." loading="lazy">
             </picture>
             <div class="about__info">
               <h3 class="about__title headline" data-shadow="О нас">О нас</h3>
@@ -784,7 +788,7 @@
         <section class="reviews" id="reviews">
           <div class="container">
             <div class="reviews__top">
-              <h2 class="reviews__title title" data-shadow="Отзывы">Отзывы</h2>
+              <h2 class="reviews__title headline" data-shadow="Отзывы">Отзывы</h2>
               <div class="reviews__arrows buttons">
                 <button class="reviews__prev button is-prev" type="button" aria-label="Предыдущий слайд.">
                   <svg class="arrow__icon" width="14" height="8" aria-hidden="true" focusable="false">
@@ -807,8 +811,8 @@
                   </picture>
                   <div class="reviews__content">
                     <div class="reviews__body-text">
-                      <p>Осенью ходили в&nbsp;поход на&nbsp;Алтай с&nbsp;друзьями. Впечатления потрясающие! Инструкторы&nbsp;&mdash; настоящие эксперты&nbsp;&mdash; всему научили, все показали. Делились увлекательными историями о&nbsp;местах, людях, культуре места.</p>
-                      <p>С&nbsp;уверенностью могу сказать, что жизнь разделилась на&nbsp;до&nbsp;этого и&nbsp;после. Еще никогда не&nbsp;отдыхал так душой и&nbsp;телом. Всем очень рекомендую!</p>
+                      <p>Осенью ходили в&nbsp;поход на&nbsp;Алтай с&nbsp;друзьями. Впечатления потрясающие! Инструкторы&nbsp;&mdash; настоящие эксперты&nbsp;&mdash; всему научили, все показали. Делились увлекательными историями&nbsp;о&nbsp;местах, людях, культуре места.</p>
+                      <p>С&nbsp;уверенностью могу сказать, что жизнь разделилась на&nbsp;до&nbsp;этого и&nbsp;после. Еще никогда не&nbsp;отдыхал так душой&nbsp;и&nbsp;телом. Всем очень рекомендую!</p>
                     </div>
                     <p class="reviews__info">
                       <span class="reviews__name">Фролов Александр</span>
@@ -1134,7 +1138,7 @@
                 </svg>
                 <p>
                   <b>Телефон:</b>
-                  <a href="tel:89837454545">89837454545</a>
+                  <a href="tel:89837454545">8 983 745 45 45</a>
                 </p>
               </div>
               <div class="contacts__item">
@@ -1142,7 +1146,7 @@
                   <use href="./img/sprite.svg#envelope"></use>
                 </svg>
                 <p>
-                  <b>Email:</b>
+                  <b>E-mail:</b>
                   <a href="mailto:omsk@supergym.ru">info@lifetour.com</a>
                 </p>
               </div>

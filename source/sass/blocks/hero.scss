@@ -11,6 +11,10 @@
   margin: 0 auto;
 }
 
+.hero__slider {
+  position: relative;
+}
+
 .hero__title {
   margin: 0 0 1.6vw;
   padding: 0;
@@ -19,7 +23,7 @@
   font-size: 5.45vw;
   line-height: 1;
   position: relative;
-  z-index: 3;
+  z-index: 2;
 
   @include vp-1199 {
     margin: 10vw auto 1.6vw;
@@ -36,34 +40,7 @@
 .hero__item {
   margin: 0 auto;
   max-width: 100%;
-  padding: 12.7vw 8.3vw 4.8vw;
-  background-color: $color-navy-blue;
-  background-image: url("../img/peaks-desktop.jpg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
   position: relative;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/peaks-desktop@2x.jpg");
-  }
-
-  @include vp-1199 {
-    padding: 12.7vw 8.3vw 33vw;
-    background-image: url("../img/peaks-tablet.jpg");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/peaks-tablet@2x.jpg");
-    }
-  }
-
-  @include vp-767 {
-    padding: 43.7vw 4.6vw 53vw;
-    background-image: url("../img/peaks-mobile.jpg");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/peaks-mobile@2x.jpg");
-    }
-  }
 
   .hero__title {
     @include vp-767 {
@@ -77,10 +54,10 @@
     font-weight: 400;
     width: 36%;
     letter-spacing: 0.03em;
-    margin-bottom: 2.2vw;
+    margin-bottom: 2.45vw;
 
     @include vp-1199 {
-      margin: 0 auto 3.5vw;
+      margin: 0 auto 3.6vw;
       letter-spacing: 0.05em;
       font-size: 2vw;
       width: 70%;
@@ -96,29 +73,17 @@
   }
 
   &--2 {
-    background-image: url("../img/kamchatka-desktop.jpg");
-    padding: 12.7vw 8.3vw 7.6vw;
+    .hero__desc {
+      padding: 12.7vw 8.3vw 7.6vw;
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/kamchatka-desktop@2x.jpg");
-    }
-
-    @include vp-1199 {
-      padding: 12.7vw 8.3vw 34vw;
-      background-image: url("../img/kamchatka-tablet.jpg");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/kamchatka-tablet@2x.jpg");
+      @include vp-1199 {
+        padding: 12.7vw 8.3vw 3vw;
       }
-    }
 
-    @include vp-767 {
-      padding: 42.7vw 4.6vw 53vw;
-      background-image: url("../img/kamchatka-mobile.jpg");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/kamchatka-mobile@2x.jpg");
+      @include vp-767 {
+        padding: 42.7vw 4.6vw 53vw;
       }
+
     }
 
     .hero__title {
@@ -155,7 +120,7 @@
   &--3 {
     @include vp-1199 {
       text-align: center;
-      padding: 12.7vw 5.3vw 36.8vw;
+      padding: 12.7vw 5.3vw 3.8vw;
     }
 
     .hero__title {
@@ -187,28 +152,12 @@
       }
     }
 
-    background-image: url("../img/altai-desktop.jpg");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/altai-desktop@2x.jpg");
-    }
-
     @include vp-1199 {
-      padding: 12.7vw 8.3vw 34vw;
-      background-image: url("../img/altai-tablet.jpg");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/altai-tablet@2x.jpg");
-      }
+      padding: 12.7vw 8.3vw 3vw;
     }
 
     @include vp-767 {
-      padding: 42.7vw 4.6vw 38vw;
-      background-image: url("../img/altai-mobile.jpg");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/altai-mobile@2x.jpg");
-      }
+      padding: 42.7vw 4.6vw 8vw;
     }
   }
 }
@@ -226,7 +175,7 @@
   background-color: $color-navy-blue;
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 1.25vw 1.25vw 1.2vw;
   width: 18.2%;
   margin: 0 0 9.5vw;
 
@@ -245,14 +194,19 @@
 }
 
 .hero__desc {
+  padding: 12.5vw 8.25vw 4.8vw;
   font-size: 1.1vw;
   font-weight: 400;
-  z-index: 2;
   position: relative;
   text-align: start;
 
   @include vp-1199 {
     text-align: center;
+    padding: 12.5vw 8.25vw 0.8vw;
+  }
+
+  @include vp-767 {
+    padding: 43.7vw 4.6vw 53vw;
   }
 }
 
@@ -269,27 +223,52 @@
   p {
     flex: 0 0 auto;
     font-size: 0.8vw;
-    padding: 1vw 1.6vw 0.7vw 2.5vw;
+    padding: 1vw 1vw 0.8vw 1.3vw;
     border: 1px solid $color-default-white;
     position: relative;
   }
 
-  p::before {
-    content: url("../img/svg/moon.svg");
-    position: absolute;
-    width: 50%;
-    top: 50%;
-    left: 1.3vw;
-    color: $color-default-white;
-    transform: translateY(-50%);
-  }
-
   .hero__info--level {
     flex: 0 0 auto;
+    min-width: 15.3%;
+  }
+}
+
+.hero__info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  gap: 5%;
+  min-width: 13%;
+
+  svg {
+    width: 0.95vw;
+    height: 1.11vw;
+  }
+}
+
+.hero__link {
+  position: relative;
+
+  @include vp-1199 {
+    height: 39vw;
   }
 
-  .hero__info--level::before {
-    content: url("../img/svg/level.svg");
+  picture {
+    position: relative;
+  }
+}
+
+.hero__background {
+  img {
+    position: absolute;
+    background-color: $color-navy-blue;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 }
 
@@ -320,19 +299,11 @@
   }
 }
 
-.hero__link {
-  position: relative;
-
-  @include vp-1199 {
-    height: 40vw;
-  }
-}
-
 .hero__video {
   position: absolute;
   top: 21vw;
   right: 8.5vw;
-  width: 33vw;
+  width: 33.3vw;
   padding-bottom: 22.63%;
   height: 0;
   overflow: hidden;
@@ -342,7 +313,7 @@
     right: 0;
     top: 4.8vw;
     width: 58vw;
-    padding-bottom: 48%;
+    padding-bottom: 39%;
     margin: 0 auto;
   }
 
@@ -355,7 +326,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: 2;
   }
 
   & iframe {
@@ -372,16 +342,38 @@
 .hero__button {
   position: absolute;
   z-index: 2;
-  padding: 1vw 1vw 1vw 1.2vw;
-  background-color: transparent;
+  padding: 1.25vw 1.25vw 1.25vw 1.55vw;
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
-  border: 2px solid $color-default-white;
+  border: 1px solid $color-default-white;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
+  &:hover,
+  &:focus {
+    border-color: $color-resolution-blue;
+    background-color: transparent;
+    stroke: $color-resolution-blue;
+  }
+
+  &:active {
+    background-color: $color-resolution-blue;
+    border-color: $color-resolution-blue;
+  }
+
+  svg {
+    width: 1.1vw;
+    height: 1.3vw;
+
+    @include vp-1199 {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
   @include vp-1199 {
-    padding: 2.4vw 2.4vw 2.4vw 2.6vw;
+    padding: 2.2vw 2.4vw 2.2vw 2.8vw;
   }
 }
 
@@ -405,15 +397,15 @@
 
 .hero__pagination {
   text-align: center;
-  bottom: 8.6vw;
-  right: 7.7vw;
-  width: 60%;
+  bottom: 8.9vw;
+  right: 0.4vw;
+  width: 20%;
 
   @include vp-1199 {
     text-align: center;
     width: 100%;
     right: 0;
-    bottom: 12.2vw;
+    bottom: 11.7vw;
   }
 
   @include vp-767 {

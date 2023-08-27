@@ -16,8 +16,8 @@
 
     @include vp-1199 {
       padding: 3.9% 5.86% 3.9% 5.76%;
-      grid-template-columns: calc(133/678*100%) calc(144/678*100%) calc(136/678*100%);
-      column-gap: calc(133/678*100%);
+      grid-template-columns: 19.62% 21.24% 22.06%;
+      column-gap: 19.52%;
       align-content: start;
       font-size: 2.1vw;
     }
@@ -31,7 +31,6 @@
 
     .nav-list {
       @include vp-1199 {
-        flex-direction: column;
         justify-content: start;
         row-gap: 2.2vw;
         text-transform: uppercase;
@@ -45,6 +44,7 @@
 
       &__item {
         @include vp-1199 {
+          flex: 0 1 auto;
           font-weight: 700;
           text-align: start;
           box-sizing: border-box;
@@ -61,7 +61,10 @@
   a {
     display: block;
     color: inherit;
+  }
 
+  &__logo,
+  &__phone {
     &:hover,
     &:focus-visible,
     &:focus {
@@ -171,7 +174,7 @@
 
   a {
     @include vp-1199 {
-      margin: 10px 0 0 6px;
+      margin: 8% 0 0 6%;
     }
 
     @include vp-767 {

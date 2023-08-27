@@ -6,6 +6,11 @@ import {carouselHero} from './vendor/carousel';
 import {findVideos} from './modules/video';
 import {addAudioPlayer} from './modules/audio';
 import {addToursSlider} from './vendor/tours';
+import {addCoachesSlider} from './vendor/coaches';
+import {addReviewsSlider} from './vendor/reviews';
+import {addAdvantagesSlider} from './vendor/advantages';
+import {addGallerySlider} from './vendor/gallery';
+import {addContactsMap} from './modules/map';
 
 
 // ---------------------------------
@@ -20,6 +25,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   carouselHero();
   toggleMenu();
+  addAdvantagesSlider();
+  addAudioPlayer();
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
@@ -30,8 +37,11 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     findVideos();
-    addAudioPlayer();
     addToursSlider();
+    addCoachesSlider();
+    addReviewsSlider();
+    addGallerySlider();
+    addContactsMap();
   });
 });
 

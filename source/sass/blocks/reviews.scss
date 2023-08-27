@@ -1,0 +1,184 @@
+.reviews {
+  position: relative;
+
+  > picture {
+    position: absolute;
+    bottom: -218px;
+    left: 0;
+    z-index: -1;
+  }
+
+  @include vp-1199 {
+    > picture {
+      display: none;
+    }
+  }
+
+  > .container {
+    padding: 8.5% 0 2% 8.3%;
+
+    @include vp-1199 {
+      padding: 5.9% 0 2% 6%;
+    }
+
+    @include vp-767 {
+      padding-top: 36px;
+      padding-bottom: 34px;
+    }
+  }
+}
+
+.reviews__top {
+  display: flex;
+  width: 91%;
+  justify-content: space-between;
+  margin: 0 0 1.8vw;
+
+  @include vp-1199 {
+    width: 93.8%;
+    margin: 0 0 3.9vw;
+  }
+
+  @include vp-767 {
+    margin: 0 0 30px;
+  }
+}
+
+.reviews__arrows {
+  margin: -13px 0 0;
+
+  @include vp-1199 {
+    margin: -15px 0 0;
+  }
+
+  @include vp-767 {
+    margin: -11px 0 0;
+  }
+}
+
+.reviews__slider {
+  overflow: visible;
+
+  @include vp-1199 {
+    margin-left: 0.1vw;
+  }
+}
+
+.reviews__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.reviews__item {
+  display: flex;
+  max-width: 59.9%;
+  padding: 1.4vw 2vw 1.5vw 1.5vw;
+  box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
+  gap: 0 2vw;
+
+  picture {
+    flex-shrink: 0;
+  }
+
+  img {
+    width: 258px;
+    height: 253px;
+    object-fit: cover;
+  }
+
+  @include vp-1199 {
+    max-width: 77.6%;
+    padding: 2.4vw 2vw 2.2vw 2.2vw;
+    gap: 0 4vw;
+
+    img {
+      width: 186px;
+      height: 237px;
+    }
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    max-width: 100%;
+    padding: 20px;
+    gap: 19px 0;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.reviews__content {
+  display: flex;
+  flex-direction: column;
+  padding: 14px 0 16px;
+
+  @include vp-1199 {
+    padding: 3px 0 2px;
+  }
+
+  @include vp-767 {
+    padding: 0;
+  }
+}
+
+.reviews__body-text {
+  margin: 0 0 26px;
+
+  @include vp-1199 {
+    margin: 0 0 3vw;
+  }
+
+  @include vp-767 {
+    margin: 0 0 16px;
+  }
+}
+
+.reviews__body-text p {
+  margin: 0 0 0.8vw;
+  font-size: 0.98vw;
+  letter-spacing: -0.5px;
+  line-height: 1.55;
+
+  @include vp-1199 {
+    letter-spacing: -0.2px;
+    font-size: 1.57vw;
+  }
+
+  @include vp-767 {
+    font-size: 3.75vw;
+  }
+}
+
+.reviews__body-text > *:last-child {
+  margin: 0;
+}
+
+.reviews__info {
+  margin: auto 0 0;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.reviews__name {
+  display: block;
+  margin: 0 0 8px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 13px;
+
+  @include vp-1199 {
+    margin: 0 0 7px;
+    font-size: 12px;
+    line-height: normal;
+  }
+
+  @include vp-767 {
+    margin: 0 0 8px;
+    line-height: 12px;
+  }
+}

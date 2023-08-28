@@ -1,4 +1,4 @@
-import './swiper.js';
+import '../vendor/swiper';
 import {isMobile} from '../utils/is-mobile';
 
 const carouselList = document.getElementById('carousel');

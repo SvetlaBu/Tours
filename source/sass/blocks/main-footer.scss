@@ -17,10 +17,10 @@
     }
 
     @include vp-767 {
-      padding: calc(15/320*100%);
+      padding: 4.6% 3.9%;
       justify-content: start;
       grid-template-columns: 1fr;
-      row-gap: 10.3vw;
+      display: block;
       font-size: 4.3vw;
     }
   }
@@ -47,6 +47,7 @@
     @include vp-767 {
       grid-row: 1/2;
       justify-self: start;
+      margin-left: 5px;
     }
 
     svg {
@@ -91,6 +92,7 @@
 
     @include vp-767 {
       justify-self: start;
+      margin: 4vw 0 12vw;
     }
   }
 
@@ -109,11 +111,11 @@
       display: grid;
       grid-template-rows: 1fr 1fr 1fr;
       grid-template-columns: calc(120/290*100%) calc(120/290*100%);
-      row-gap: calc(50/290*100%);
+      row-gap: 15%;
       justify-content: space-between;
-      grid-column-gap: calc(40/290*100%);
+      grid-column-gap: 16%;
       grid-auto-flow: column;
-      margin-left: 0;
+      margin: 1vw 0 0;
       width: 100%;
     }
 
@@ -127,7 +129,7 @@
       @include vp-767 {
         flex: 0 0 auto;
         justify-self: start;
-        font-size: 3.6vw;
+        font-size: 4.6vw;
       }
     }
   }
@@ -173,8 +175,7 @@
     }
 
     @include vp-767 {
-      grid-row: 3/4;
-      justify-self: start;
+      gap: 3px;
     }
   }
 
@@ -191,7 +192,8 @@
     }
 
     @include vp-767 {
-      grid-row: 4/5;
+      display: block;
+      margin: 3.5vw 2vw;
       font-size: 3.6vw;
     }
   }

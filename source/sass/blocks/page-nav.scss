@@ -77,12 +77,24 @@
     width: 2.2vw;
     height: 0.23vw;
     cursor: pointer;
+
+    @include vp-767 {
+      height: 0.6vw;
+      top: 3.8vw;
+      width: 6.4vw;
+    }
   }
 
   &::after {
     top: 65%;
     width: 2.95vw;
     box-shadow: 0 -2.2vw 0 0 #fff;
+
+    @include vp-767 {
+      top: 1vw;
+      width: 7.4vw;
+      box-shadow: 0 5.4vw 0 0 #fff;
+    }
   }
 }
 

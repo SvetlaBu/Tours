@@ -7,7 +7,7 @@
     }
 
     @include vp-767 {
-      padding: 14% 5% calc(62/320*100%);
+      padding: 1% 5% 19.38%;
     }
   }
 }
@@ -17,6 +17,10 @@
 
   @include vp-1199 {
     margin: 0 0 2.8vw;
+  }
+
+  @include vp-767 {
+    margin: 0 0 4.8vw;
   }
 }
 
@@ -46,6 +50,11 @@
     width: 80%;
     margin: 0 0 7.3vw;
   }
+
+  @include vp-767 {
+    width: 100%;
+    margin: 0 0 10vw;
+  }
 }
 
 .training__info {
@@ -72,7 +81,8 @@
   }
 
   @include vp-767 {
-    font-size: 4.4vw;
+    font-size: 5vw;
+    margin-left: 3px;
   }
 }
 
@@ -85,6 +95,10 @@
   @include vp-1199 {
     margin: 0 0 3.2vw;
   }
+
+  @include vp-767 {
+    margin: 0 0 7.2vw;
+  }
 }
 
 .training__person {
@@ -96,6 +110,10 @@
 
   @include vp-1199 {
     line-height: 1.22;
+  }
+
+  @include vp-767 {
+    width: 96%;
   }
 }
 
@@ -127,6 +145,10 @@
   @include vp-1199 {
     margin: 0 0 4.8vw;
   }
+
+  @include vp-767 {
+    margin: 0 0 10.4vw;
+  }
 }
 
 .training__slider {
@@ -153,7 +175,9 @@
   }
 
   @include vp-767 {
-    padding: 6.95%;
+    padding: 6.95% 6.95% 3%;
+    box-shadow: none;
+    min-height: 100vw;
   }
 
   img {
@@ -168,6 +192,11 @@
       min-height: 27.5vw;
       object-position: 57%;
       margin: 0 0 2.2vw;
+    }
+
+    @include vp-767 {
+      min-height: 68vw;
+      margin: 0 0 3.4vw;
     }
   }
 }
@@ -187,7 +216,8 @@
 
   @include vp-767 {
     font-size: 3.75vw;
-    width: 82%;
+    width: 100%;
+    margin: 3.4vw 0;
   }
 }
 
@@ -214,7 +244,8 @@
   @include vp-767 {
     display: flex;
     flex-direction: column;
-    margin-top: 7.9vw;
+    margin-top: 2.9vw;
+    margin-left: 11.6vw;
     gap: 0;
   }
 }
@@ -224,7 +255,7 @@
   position: relative;
 
   @include vp-767 {
-    padding-bottom: 7vw;
+    padding-bottom: 3.9vw;
   }
 
   &:last-of-type {
@@ -235,6 +266,11 @@
     margin: 0.7vw 0.98vw 0 0;
     width: 2.8vw;
     justify-self: flex-start;
+
+    @include vp-767 {
+      width: 6.3vw;
+      margin: 0.7vw 2.4vw 0 0;;
+    }
   }
 }
 
@@ -260,7 +296,7 @@
   border-radius: 50%;
 
   @include vp-767 {
-    top: 8px;
+    top: 13px;
     left: -33px;
     width: 13px;
     height: 13px;
@@ -269,7 +305,7 @@
 
 .training__step::after {
   @include vp-767 {
-    top: 8px;
+    top: 13px;
     right: 0;
     bottom: -13px;
     left: -27px;
@@ -305,23 +341,23 @@
   }
 }
 
-.training__step-peaks {
+.training__step--peaks {
   @include vp-1199 {
     grid-column: 1/2;
     grid-row: 2;
   }
 }
 
-.training__step-forest {
+.training__step--forest {
   @include vp-1199 {
     grid-column: 2/-1;
   }
 }
 
-.training__step-peaks::before,
-.training__step-forest::before,
-.training__step-peaks::after,
-.training__step-forest::after {
+.training__step--peaks::before,
+.training__step--forest::before,
+.training__step--peaks::after,
+.training__step--forest::after {
   @include vp-1199 {
     top: -22px;
   }
@@ -332,7 +368,7 @@
   }
 }
 
-.training__step-equipment::after {
+.training__step--equipment::after {
   @include vp-1199 {
     display: none;
   }
@@ -342,7 +378,7 @@
   }
 }
 
-.training__step-forest::after {
+.training__step--forest::after {
   @include vp-1199 {
     position: absolute;
     right: auto;
@@ -359,8 +395,8 @@
   }
 }
 
-.training__step-peaks::before,
-.training__step-forest::before {
+.training__step--peaks::before,
+.training__step--forest::before {
   @include vp-1199 {
     top: -30px;
   }
@@ -370,7 +406,7 @@
   }
 }
 
-.training__step-peaks::after {
+.training__step--peaks::after {
   @include vp-767 {
     display: none;
   }

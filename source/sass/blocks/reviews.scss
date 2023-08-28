@@ -22,8 +22,7 @@
     }
 
     @include vp-767 {
-      padding-top: 36px;
-      padding-bottom: 34px;
+      padding: 21.9% 0 2% 0;
     }
   }
 }
@@ -40,7 +39,8 @@
   }
 
   @include vp-767 {
-    margin: 0 0 30px;
+    width: 90%;
+    margin: 0 0 30px 5%;
   }
 }
 
@@ -61,6 +61,10 @@
 
   @include vp-1199 {
     margin-left: 0.1vw;
+  }
+
+  @include vp-767 {
+    padding: 0 14px 14px;
   }
 }
 
@@ -115,6 +119,8 @@
   display: flex;
   flex-direction: column;
   padding: 14px 0 16px;
+  margin: 0;
+  font-style: normal;
 
   @include vp-1199 {
     padding: 3px 0 2px;
@@ -125,7 +131,7 @@
   }
 }
 
-.reviews__body-text {
+.reviews__text {
   margin: 0 0 26px;
 
   @include vp-1199 {
@@ -137,7 +143,7 @@
   }
 }
 
-.reviews__body-text p {
+.reviews__text p {
   margin: 0 0 0.8vw;
   font-size: 0.98vw;
   letter-spacing: -0.5px;
@@ -153,7 +159,7 @@
   }
 }
 
-.reviews__body-text > *:last-child {
+.reviews__text > *:last-child {
   margin: 0;
 }
 

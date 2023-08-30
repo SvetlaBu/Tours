@@ -14,24 +14,14 @@
 .button {
   position: relative;
   display: block;
-  width: 2.55vw;
-  height: 2.5vw;
+  width: 35px;
+  height: 35px;
   color: $color-default-white;
   background-color: $color-navy-blue;
   border: 1px solid $color-transparent;
   outline: none;
   cursor: pointer;
   transition: all $trans-default;
-
-  @include vp-1199 {
-    width: 4.85vw;
-    height: 4.7vw;
-  }
-
-  @include vp-767 {
-    width: 12vw;
-    height: 11vw;
-  }
 
   @include hover-focus {
     color: $color-resolution-blue;
@@ -55,6 +45,15 @@
   position: absolute;
   margin: auto;
   inset: 0;
+  width: 1.1vw;
+
+  @include vp-1199 {
+    width: 2.09vw;
+  }
+
+  @include vp-767 {
+    width: 5vw;
+  }
 }
 
 .button.is-prev svg {

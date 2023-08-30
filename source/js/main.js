@@ -2,15 +2,15 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {toggleMenu} from './modules/modals/menu';
-import {carouselHero} from './vendor/carousel';
+import {carouselHero} from './modules/carousel';
 import {findVideos} from './modules/video';
 import {addAudioPlayer} from './modules/audio';
-import {addToursSlider} from './vendor/tours';
-import {addCoachesSlider} from './vendor/coaches';
-import {addReviewsSlider} from './vendor/reviews';
-import {addAdvantagesSlider} from './vendor/advantages';
-import {addGallerySlider} from './vendor/gallery';
-import {addContactsMap} from './modules/map';
+import {addToursSlider} from './modules/tours';
+import {addCoachesSlider} from './modules/coaches';
+import {addReviewsSlider} from './modules/reviews';
+import {addAdvantagesSlider} from './modules/advantages';
+import {addGallerySlider} from './modules/gallery';
+import {addContactsMap} from './modules/yamap';
 
 
 // ---------------------------------
@@ -26,7 +26,6 @@ window.addEventListener('DOMContentLoaded', () => {
   carouselHero();
   toggleMenu();
   addAdvantagesSlider();
-  addAudioPlayer();
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
@@ -39,6 +38,7 @@ window.addEventListener('DOMContentLoaded', () => {
     findVideos();
     addToursSlider();
     addCoachesSlider();
+    addAudioPlayer();
     addReviewsSlider();
     addGallerySlider();
     addContactsMap();

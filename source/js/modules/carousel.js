@@ -1,11 +1,11 @@
-import './swiper.js';
+import '../vendor/swiper';
 import {isMobile} from '../utils/is-mobile';
 
 const carouselList = document.getElementById('carousel');
 
 const carouselHero = () => {
   if (carouselList) {
-    const swiper = new Swiper(carouselList, {
+    return new Swiper(carouselList, {
       allowTouchMove: isMobile(),
       slidesPerView: 1,
       speed: 300,
@@ -16,6 +16,7 @@ const carouselHero = () => {
       loop: true,
     });
   }
+  return null;
 };
 
 export {carouselHero};

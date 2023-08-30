@@ -40,7 +40,7 @@
   }
 
   @include vp-767 {
-    padding: 182px 4.9vw 175px;
+    padding: 57% 4.9vw 45%;
   }
 }
 
@@ -99,6 +99,8 @@
 
   @include vp-767 {
     margin: 0;
+    width: 100%;
+    gap: 1.8vw 0;
   }
 }
 
@@ -116,7 +118,7 @@
   @include vp-1199 {
     width: 100%;
     font-size: 2.1vw;
-    margin: 1vw auto 1vw;
+    margin: 0 auto;
     padding: 2.3vw 2.09vw 2.3vw;
   }
 

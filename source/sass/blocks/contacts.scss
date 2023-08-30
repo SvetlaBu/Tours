@@ -2,7 +2,7 @@
   position: relative;
 
   & > .container {
-    padding: 6% calc(120/1440*100%) calc(62/1440*100%);
+    padding: 6% calc(120/1440*100%) 5.1%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     flex-wrap: wrap;
@@ -13,7 +13,7 @@
     }
 
     @include vp-767 {
-      padding: 14% 5% calc(62/320*100%);
+      padding: 20% 5% 12.4%;
     }
   }
 }
@@ -44,6 +44,8 @@
   @include vp-767 {
     width: 100%;
     font-size: 4.39vw;
+    letter-spacing: -0.13px;
+    margin: 0 0 9.3%;
   }
 }
 
@@ -69,6 +71,7 @@
     display: flex;
     gap: 3vw;
     font-size: 4.39vw;
+    margin-bottom: 8.6%;
   }
 
   &:last-of-type {
@@ -79,6 +82,7 @@
 
     @include vp-767 {
       width: 100%;
+      gap: 3vw;
     }
 
     p {
@@ -89,9 +93,19 @@
       }
     }
 
+    span {
+      @include vp-767 {
+        width: 67%;
+      }
+    }
+
     svg {
       @include vp-1199 {
         margin-left: 5%;
+      }
+
+      @include vp-767 {
+        margin: 1% 0 0;
       }
     }
   }
@@ -115,6 +129,11 @@
       align-self: start;
       margin-top: 2%;
     }
+
+    @include vp-767 {
+      margin-top: 1%;
+      scale: 1;
+    }
   }
 
   span,
@@ -125,6 +144,10 @@
 
     @include vp-1199 {
       font-size: 1.8vw;
+    }
+
+    @include vp-767 {
+      font-size: 4.3vw;
     }
   }
 }
@@ -138,5 +161,14 @@
   @include vp-1199 {
     width: 100%;
     height: 45vw;
+  }
+
+  @include vp-767 {
+    height: 100vw;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
   }
 }

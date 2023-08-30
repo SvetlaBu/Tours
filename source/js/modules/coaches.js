@@ -1,4 +1,4 @@
-import Swiper from './swiper';
+import Swiper from '../vendor/swiper';
 import {isMobile} from '../utils/is-mobile';
 
 const addCoachesSlider = () => {
@@ -25,6 +25,7 @@ const addCoachesSlider = () => {
       },
     });
   }
+  return null;
 };
 
 export {addCoachesSlider};

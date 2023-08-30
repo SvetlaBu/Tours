@@ -23,8 +23,7 @@
   }
 
   @include vp-767 {
-    padding-top: 34px;
-    padding-bottom: 33px;
+    padding: 9.8% 5% 8.3%;
   }
 }
 
@@ -49,6 +48,10 @@
     width: 88%;
     margin: 0 auto;
   }
+
+  @include vp-767 {
+    width: 100%;
+  }
 }
 
 .advantages__list {
@@ -64,7 +67,7 @@
   }
 
   @include vp-767 {
-    gap: 15px 0;
+    gap: 19px 0;
   }
 }
 
@@ -75,7 +78,7 @@
   width: 22%;
   height: auto;
   margin-right: 1.74%;
-  padding: 2.26% 1.16%;
+  padding: 2.26% 1%;
   background-color: $color-default-white;
   border: 1px solid rgba($color-navy-blue, 0.1);
 
@@ -88,12 +91,12 @@
 
   @include vp-767 {
     width: 100%;
-    padding: 19px 10px;
+    padding: 5.9% 0;
   }
 }
 
 .advantages__icon {
-  margin: 0 0 2.24vw;
+  margin: 0 0 2.1vw;
   padding: 0.99vw;
   color: $color-navy-blue;
   border: 1px solid $color-navy-blue;
@@ -123,30 +126,28 @@
   }
 }
 
-.advantages__body-text h3 {
+.advantages__headline {
   margin: 0 0 15px;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 1.22vw;
+  line-height: 1;
   text-align: center;
 
   @include vp-1199 {
     margin: 0 0 1.83vw;
     font-size: 2.09vw;
-    line-height: 1;
   }
 
   @include vp-767 {
     margin: 0 0 15px;
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 4.39vw;
   }
 }
 
-.advantages__body-text p {
+.advantages__desc {
   margin-top: 0;
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 0.94vw;
+  line-height: 1.63;
   text-align: center;
 
   @include vp-1199 {
@@ -154,10 +155,21 @@
     line-height: 1.42;
     letter-spacing: -0.35px;
   }
+
+  @include vp-767 {
+    font-size: 3.8vw;
+    line-height: 1.5;
+    width: 91%;
+    margin: 0 auto;
+  }
 }
 
-.advantages__body-text > *:last-child {
+.advantages__text > *:last-child {
   margin: 0;
+
+  @include vp-767 {
+    margin: 0 auto;
+  }
 }
 
 .advantages__arrows.buttons {

@@ -2,12 +2,13 @@
   .container {
     width: 100%;
     position: relative;
-    padding: calc(40/1440*100%) calc(120/1440*100%);
+    padding: 1.98% calc(120/1440*100%);
     box-sizing: border-box;
     display: grid;
     justify-content: space-between;
     align-content: center;
-    grid-template-columns: 17.08% 54.92% 11.83%;
+    grid-template-columns: 17.08% 54.92% 15%;
+    border-top: 1px solid rgba(45, 56, 63, 0.2);
 
     @include vp-1199 {
       padding: 7.4% 5.86%;
@@ -17,10 +18,10 @@
     }
 
     @include vp-767 {
-      padding: calc(15/320*100%);
+      padding: 4.6% 3.9%;
       justify-content: start;
       grid-template-columns: 1fr;
-      row-gap: 10.3vw;
+      display: block;
       font-size: 4.3vw;
     }
   }
@@ -47,6 +48,7 @@
     @include vp-767 {
       grid-row: 1/2;
       justify-self: start;
+      margin-left: 5px;
     }
 
     svg {
@@ -64,11 +66,14 @@
   }
 
   &__logo,
-  &__phone {
+  &__info,
+  &__phone a {
     &:hover,
     &:focus-visible,
     &:focus {
       color: #1c3374;
+      outline: none;
+      text-decoration: none;
     }
 
     &:active {
@@ -81,26 +86,27 @@
     }
   }
 
-  &__page-nav {
+  .page-nav {
+    margin: 0;
+
     @include vp-1199 {
-      justify-self: end;
       align-self: flex-start;
-      margin-top: 0.9vw;
-      width: 90%;
+      margin: 0.9vw 0 0 0;
+      width: 100%;
     }
 
     @include vp-767 {
       justify-self: start;
+      margin: 4vw 0 12vw;
     }
   }
 
   .nav-list {
     @include vp-1199 {
-      margin: 0;
-      gap: 1.55%;
+      margin: 0 0 0 40px;
+      gap: 4px 1.55%;
       line-height: 1;
       width: 100%;
-      gap: 2%;
       align-items: end;
       flex-direction: row;
     }
@@ -109,11 +115,11 @@
       display: grid;
       grid-template-rows: 1fr 1fr 1fr;
       grid-template-columns: calc(120/290*100%) calc(120/290*100%);
-      row-gap: calc(50/290*100%);
+      row-gap: 15%;
       justify-content: space-between;
-      grid-column-gap: calc(40/290*100%);
+      grid-column-gap: 16%;
       grid-auto-flow: column;
-      margin-left: 0;
+      margin: 1vw 0 0;
       width: 100%;
     }
 
@@ -127,7 +133,7 @@
       @include vp-767 {
         flex: 0 0 auto;
         justify-self: start;
-        font-size: 3.6vw;
+        font-size: 4.6vw;
       }
     }
   }
@@ -173,8 +179,7 @@
     }
 
     @include vp-767 {
-      grid-row: 3/4;
-      justify-self: start;
+      gap: 3px;
     }
   }
 
@@ -191,7 +196,8 @@
     }
 
     @include vp-767 {
-      grid-row: 4/5;
+      display: block;
+      margin: 3.5vw 2vw;
       font-size: 3.6vw;
     }
   }

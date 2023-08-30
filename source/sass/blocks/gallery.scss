@@ -6,7 +6,7 @@
   }
 
   @include vp-767 {
-    padding-top: 34px;
+    padding-top: 12.6vw;
   }
 }
 
@@ -53,7 +53,7 @@
 .gallery__text p {
   margin: 0;
   font-size: 1.09vw;
-  line-height: 1.3;
+  line-height: 1.4;
 
   @include vp-1199 {
     font-size: 14px;
@@ -85,6 +85,10 @@
   @include vp-1199 {
     height: 58.2vw;
   }
+
+  @include vp-767 {
+    height: 81vw;
+  }
 }
 
 .gallery__list {
@@ -114,27 +118,32 @@
 
   img {
     object-fit: fill;
+
+    @include vp-767 {
+      width: 100%;
+      height: 100%;
+    }
   }
 
   @include vp-767 {
-    gap: 0.3%;
+    gap: 0.1%;
 
     &:nth-child(2n -1) {
       img {
-        width: 159px;
-        height: 259px;
+        width: 50vw;
+        height: 81vw;
       }
     }
 
     &:nth-child(2n) {
       picture {
-        width: 172px;
-        height: 103px;
+        width: 54vw;
+        height: 32vw;
       }
 
       .gallery__bottom {
-        width: 11%;
-        height: 13vw;
+        width: 54vw;
+        height: 48.6vw;
       }
     }
   }

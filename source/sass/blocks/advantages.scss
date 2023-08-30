@@ -78,7 +78,7 @@
   width: 22%;
   height: auto;
   margin-right: 1.74%;
-  padding: 2.26% 1.16%;
+  padding: 2.26% 1%;
   background-color: $color-default-white;
   border: 1px solid rgba($color-navy-blue, 0.1);
 
@@ -96,7 +96,7 @@
 }
 
 .advantages__icon {
-  margin: 0 0 2.24vw;
+  margin: 0 0 2.1vw;
   padding: 0.99vw;
   color: $color-navy-blue;
   border: 1px solid $color-navy-blue;
@@ -129,7 +129,7 @@
 .advantages__headline {
   margin: 0 0 15px;
   font-weight: 600;
-  font-size: 1.22;
+  font-size: 1.22vw;
   line-height: 1;
   text-align: center;
 
@@ -146,8 +146,8 @@
 
 .advantages__desc {
   margin-top: 0;
-  font-size: 0.98;
-  line-height: 1.4;
+  font-size: 0.94vw;
+  line-height: 1.63;
   text-align: center;
 
   @include vp-1199 {

@@ -4,7 +4,7 @@ import {isMobile} from '../utils/is-mobile';
 const addAdvantagesSlider = () => {
   const width = window.innerWidth;
   if (width > 1199) {
-    const swiper = new Swiper('.advantages__slider', {
+    return new Swiper('.advantages__slider', {
       allowTouchMove: isMobile(),
       loop: true,
       slidesPerView: 'auto',
@@ -14,6 +14,7 @@ const addAdvantagesSlider = () => {
       },
     });
   }
+  return null;
 };
 
 export {addAdvantagesSlider};

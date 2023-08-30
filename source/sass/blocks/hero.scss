@@ -13,6 +13,30 @@
 
 .hero__slider {
   position: relative;
+
+  .swiper-pagination-bullet {
+    @include hover-focus {
+      outline: none;
+      background-color: $color-default-white;
+      opacity: 0.4;
+    }
+
+    @include active {
+      opacity: 0.7;
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $color-default-white;
+  }
+
+  .swiper-slide-duplicate {
+    visibility: hidden;
+  }
+
+  .swiper-slide-duplicate-active {
+    visibility: visible;
+  }
 }
 
 .hero__title {
@@ -82,7 +106,7 @@
       }
 
       @include vp-767 {
-        padding: 42.7vw 4.6vw 5.3vw;
+        padding: 12.7vw 4.6vw 5.3vw;
       }
     }
 
@@ -267,7 +291,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
   }
 }

@@ -5,13 +5,12 @@ import {toggleMenu} from './modules/modals/menu';
 import {carouselHero} from './modules/carousel';
 import {findVideos} from './modules/video';
 import {addAudioPlayer} from './modules/audio';
-import {findAudio} from './modules/audio';
 import {addToursSlider} from './modules/tours';
 import {addCoachesSlider} from './modules/coaches';
 import {addReviewsSlider} from './modules/reviews';
 import {addAdvantagesSlider} from './modules/advantages';
 import {addGallerySlider} from './modules/gallery';
-import {addContactsMap} from './modules/map';
+import {addContactsMap} from './modules/yamap';
 
 
 // ---------------------------------
@@ -27,7 +26,6 @@ window.addEventListener('DOMContentLoaded', () => {
   carouselHero();
   toggleMenu();
   addAdvantagesSlider();
-  addAudioPlayer();
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
@@ -40,6 +38,7 @@ window.addEventListener('DOMContentLoaded', () => {
     findVideos();
     addToursSlider();
     addCoachesSlider();
+    addAudioPlayer();
     addReviewsSlider();
     addGallerySlider();
     addContactsMap();

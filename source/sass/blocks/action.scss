@@ -1,5 +1,6 @@
 .action {
   transition: 300ms;
+  border: 1px solid transparent;
 
   &:focus,
   &:hover {
@@ -17,6 +18,7 @@
     color: $color-resolution-blue;
     background-color: $color-default-white;
     border-color: $color-resolution-blue;
+    outline: none;
   }
 
   &:disabled {

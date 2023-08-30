@@ -2,7 +2,7 @@
   position: relative;
 
   & > .container {
-    padding: 6% calc(120/1440*100%) calc(62/1440*100%);
+    padding: 6% calc(120/1440*100%) 5.1%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     flex-wrap: wrap;
@@ -165,5 +165,10 @@
 
   @include vp-767 {
     height: 100vw;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
   }
 }

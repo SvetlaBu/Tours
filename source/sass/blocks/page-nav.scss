@@ -2,6 +2,7 @@
   padding: 0;
   position: relative;
   align-self: center;
+  margin-left: 8%;
 
   @include vp-1199 {
     background-color: transparent;
@@ -17,7 +18,9 @@
 }
 
 .page-nav--closed > .page-nav__list {
-  display: none;
+  @include vp-1199 {
+    display: none;
+  }
 }
 
 .page-nav--opened {
@@ -26,7 +29,6 @@
   margin-top: 0;
 
   @include vp-1199 {
-    position: relative;
     width: 100%;
     box-sizing: border-box;
   }
@@ -71,7 +73,7 @@
     content: "";
     position: absolute;
     z-index: 4;
-    top: 2.3vw;
+    top: 20px;
     left: 0;
     background-color: $color-default-white;
     width: 2.2vw;
@@ -80,20 +82,20 @@
 
     @include vp-767 {
       height: 0.6vw;
-      top: 3.8vw;
+      top: 50px;
       width: 6.4vw;
     }
   }
 
   &::after {
-    top: 65%;
+    top: 30px;
     width: 2.95vw;
-    box-shadow: 0 -2.2vw 0 0 #fff;
+    box-shadow: 0 -2.2vw 0 0 #ffffff;
 
     @include vp-767 {
-      top: 1vw;
+      top: 32px;
       width: 7.4vw;
-      box-shadow: 0 5.4vw 0 0 #fff;
+      box-shadow: 0 5.4vw 0 0 #ffffff;
     }
   }
 }
@@ -134,12 +136,23 @@
   }
 }
 
-.page-nav--nojs > .page-nav__toggle {
+.page-nav--nojs ~ .page-nav__toggle {
   display: none;
 }
 
-// .page-nav--nojs {
-//  @include vp-1199 {
-//    margin-top: 36px;
-//  }
-// }
+.page-nav--nojs {
+  @include vp-1199 {
+    position: relative;
+    color: $color-default-black;
+  }
+}
+
+
+.on-menu::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  background-size: 100% 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  inset: 0;
+}

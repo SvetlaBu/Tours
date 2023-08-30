@@ -9,10 +9,9 @@
     padding: calc(40/1440*100%) calc(120/1440*100%);
     box-sizing: border-box;
     display: grid;
-    justify-content: start;
+    justify-content: space-between;
     align-content: center;
-    grid-template-columns: calc(205/1200*100%) calc(587/1200*100%) calc(142/1200*100%);
-    column-gap: calc(134/1200*100%);
+    grid-template-columns: 17.08% 54.92% 15%;
 
     @include vp-1199 {
       padding: 3.9% 5.86% 3.9% 5.76%;
@@ -64,11 +63,15 @@
   }
 
   &__logo,
-  &__phone {
+  &__phone a {
     &:hover,
     &:focus-visible,
     &:focus {
       color: #1c3374;
+      outline: none;
+      border: none;
+      box-shadow: none;
+      text-decoration: none;
     }
 
     &:active {
@@ -97,7 +100,7 @@
   @include vp-1199 {
     color: $color-default-black;
     background-color: $color-default-white;
-    position: relative;
+    position: absolute;
   }
 }
 
@@ -141,9 +144,10 @@
 }
 
 .main-header__phone {
-  font-size: 1.23vw;
+  font-size: 1.26vw;
   line-height: 1.5;
   font-weight: 600;
+  text-align: end;
 
   &:hover,
   &:focus-visible,

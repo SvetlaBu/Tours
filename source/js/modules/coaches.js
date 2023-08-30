@@ -25,6 +25,7 @@ const addCoachesSlider = () => {
       },
     });
   }
+  return null;
 };
 
 export {addCoachesSlider};

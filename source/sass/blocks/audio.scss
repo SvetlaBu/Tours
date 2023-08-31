@@ -60,10 +60,6 @@
     color: $color-navy-blue;
   }
 
-  @include focus {
-    color: $color-navy-blue;
-  }
-
   @include active {
     color: $color-midnight-express;
   }
@@ -81,7 +77,7 @@
   background-color: rgba($color-resolution-blue, 0.4);
 }
 
-.audio__line {
+.audio__passed-line {
   position: absolute;
   top: 0;
   left: 0;
@@ -130,5 +126,4 @@
 .audio__center {
   display: flex;
   gap: 0 15px;
-  pointer-events: all;
 }

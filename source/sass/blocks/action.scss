@@ -1,29 +1,17 @@
 .action {
-  transition: 300ms;
-  border: 1px solid transparent;
+  outline: none;
+  transition: color $trans-default;
 
-  &:focus,
-  &:hover {
+  @include hover-focus {
     color: $color-resolution-blue;
-    background-color: $color-default-white;
-    border-color: $color-resolution-blue;
   }
 
-  &:active {
-    background-color: $color-resolution-blue;
-    border-color: $color-resolution-blue;
+  @include active {
+    color: $color-navy-blue;
   }
 
-  &:focus-visible {
-    color: $color-resolution-blue;
-    background-color: $color-default-white;
-    border-color: $color-resolution-blue;
-    outline: none;
-  }
-
-  &:disabled {
-    background-color: $color-navy-blue;
-    border-color: $color-navy-blue;
-    opacity: 0.1;
+  @include disabled {
+    opacity: 0.15;
+    pointer-events: none;
   }
 }

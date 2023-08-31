@@ -4,8 +4,8 @@
   > picture {
     position: absolute;
     bottom: -218px;
+    left: 0;
     z-index: -1;
-    left: -400px;
   }
 
   @include vp-1199 {
@@ -13,34 +13,30 @@
       display: none;
     }
   }
+}
 
-  > .container {
-    padding: 8.5% 0 2% 8.3%;
+.reviews__container {
+  padding-top: 61px;
+  padding-bottom: 68px;
 
-    @include vp-1199 {
-      padding: 5.9% 0 2% 6%;
-    }
+  @include vp-1199 {
+    padding-top: 45px;
+    padding-bottom: 42px;
+  }
 
-    @include vp-767 {
-      padding: 21.9% 0 2% 0;
-    }
+  @include vp-767 {
+    padding-top: 36px;
+    padding-bottom: 34px;
   }
 }
 
 .reviews__top {
   display: flex;
-  width: 91%;
   justify-content: space-between;
-  margin: 0 0 1.8vw;
-
-  @include vp-1199 {
-    width: 93.8%;
-    margin: 0 0 3.9vw;
-  }
+  margin: 0 0 27px;
 
   @include vp-767 {
-    width: 90%;
-    margin: 0 0 30px 5%;
+    margin: 0 0 30px;
   }
 }
 
@@ -58,14 +54,6 @@
 
 .reviews__slider {
   overflow: visible;
-
-  @include vp-1199 {
-    margin-left: 0.1vw;
-  }
-
-  @include vp-767 {
-    padding: 0 14px 14px;
-  }
 }
 
 .reviews__list {
@@ -76,11 +64,11 @@
 
 .reviews__item {
   display: flex;
-  max-width: 59.9%;
-  padding: 1.4vw 2vw 1.5vw 1.5vw;
-  box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
-  gap: 0 2vw;
+  max-width: 790px;
   height: auto;
+  padding: 20px 40px 20px 20px;
+  box-shadow: $shadow-cards;
+  gap: 0 30px;
 
   picture {
     flex-shrink: 0;
@@ -93,9 +81,8 @@
   }
 
   @include vp-1199 {
-    max-width: 77.6%;
-    padding: 2.4vw 2vw 2.2vw 2.2vw;
-    gap: 0 4vw;
+    max-width: 560px;
+    padding-right: 30px;
 
     img {
       width: 186px;
@@ -106,7 +93,8 @@
   @include vp-767 {
     flex-direction: column;
     max-width: 100%;
-    padding: 20px;
+    height: 100%;
+    padding: 18px;
     gap: 19px 0;
 
     img {
@@ -118,10 +106,9 @@
 
 .reviews__content {
   display: flex;
+  margin: 0;
   flex-direction: column;
   padding: 14px 0 16px;
-  margin: 0;
-  font-style: normal;
 
   @include vp-1199 {
     padding: 3px 0 2px;
@@ -135,28 +122,19 @@
 .reviews__text {
   margin: 0 0 26px;
 
-  @include vp-1199 {
-    margin: 0 0 3vw;
-  }
-
   @include vp-767 {
     margin: 0 0 16px;
   }
 }
 
 .reviews__text p {
-  margin: 0 0 0.8vw;
-  font-size: 0.98vw;
-  letter-spacing: -0.5px;
-  line-height: 1.55;
+  margin: 0 0 10px;
+  font-size: 14px;
+  line-height: 22px;
 
   @include vp-1199 {
-    letter-spacing: -0.2px;
-    font-size: 1.57vw;
-  }
-
-  @include vp-767 {
-    font-size: 3.75vw;
+    font-size: 12px;
+    line-height: 18px;
   }
 }
 

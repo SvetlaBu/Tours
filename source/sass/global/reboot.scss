@@ -15,12 +15,13 @@ html {
   font-style: normal;
   font-weight: 400;
   font-size: $fz-default;
-  line-height: 1.5;
-  font-family: $ff-placeholder;
-  color: $color-default-black;
+  line-height: 24px;
+  font-family: $ff-montserrat;
+  color: $color-default-elephant;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
   // оптимизация выравнивания шрифта относительно центра строки
   text-rendering: optimizeLegibility;
   // если по прежнему есть проблемы с выравниванием
@@ -35,13 +36,15 @@ body {
 }
 
 a {
-  color: $color-default-black;
+  color: $color-default-elephant;
   text-decoration: none;
+  user-select: none;
 }
 
 img,
 video {
   display: block;
+  max-width: 100%;
   height: auto;
 }
 
@@ -125,4 +128,5 @@ button,
 [type="reset"],
 [type="submit"] {
   appearance: none;
+  user-select: none;
 }

@@ -1,0 +1,31 @@
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 700px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  gap: 10px;
+  grid-area: 3/1/4/2;
+}
+
+.details__item {
+  position: relative;
+  padding: 13px 20px 13px 39px;
+  font-size: 12px;
+  line-height: 16px;
+  border: 1px solid rgba($color-default-white, 0.5);
+
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.details__icon {
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: 0;
+  left: 19px;
+  margin: auto;
+}

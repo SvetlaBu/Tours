@@ -1,48 +1,49 @@
-.gallery > .container {
-  padding-top: 0.8vw;
+.gallery__container {
+  padding-top: 65px;
 
   @include vp-1199 {
-    padding-top: 3.6vw;
+    padding-top: 46px;
   }
 
   @include vp-767 {
-    padding-top: 12.6vw;
+    padding-top: 34px;
   }
 }
 
 .gallery__title {
-  margin: 0 calc(120/1440*100%) 24px;
+  margin: 0 0 24px;
 
   @include vp-1199 {
-    margin: 0 6% 23px;
+    margin: 0 0 23px;
   }
 
   @include vp-767 {
-    margin: 0 5% 14px;
+    margin: 0 0 14px;
   }
 }
 
 .gallery__top {
-  padding: 0 calc(120/1440*100%);
   display: flex;
   justify-content: space-between;
-  margin: 0 0 3.5%;
+  margin: 0 0 45px;
 
   @include vp-1199 {
     margin: 0 0 37px;
-    padding: 0 6%;
   }
 
   @include vp-767 {
     flex-direction: column;
     justify-content: stretch;
     margin: 0 0 15px;
-    padding: 0 5%;
   }
 }
 
-.gallery__text {
-  max-width: 60%;
+.gallery__info {
+  max-width: 760px;
+
+  @include vp-1199 {
+    max-width: 60%;
+  }
 
   @include vp-767 {
     max-width: 100%;
@@ -50,11 +51,7 @@
   }
 }
 
-.gallery__text p {
-  margin: 0;
-  font-size: 1.09vw;
-  line-height: 1.4;
-
+.gallery__body-text p {
   @include vp-1199 {
     font-size: 14px;
     line-height: 22px;
@@ -66,8 +63,12 @@
   }
 }
 
+.gallery__body-text > *:last-child {
+  margin: 0;
+}
+
 .gallery__arrows {
-  margin: 0.06% 0 0;
+  margin: 6px 0 0;
 
   @include vp-1199 {
     margin: 14px 0 0;
@@ -80,14 +81,14 @@
 }
 
 .gallery__slider {
-  height: 31vw;
+  margin: 0 -120px 0;
 
   @include vp-1199 {
-    height: 58.2vw;
+    margin: 0 -45px 0;
   }
 
   @include vp-767 {
-    height: 81vw;
+    margin: 0 -15px 0;
   }
 }
 
@@ -95,14 +96,10 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  gap: 0.3%;
-
-  @include vp-1199 {
-    gap: 0.7%;
-  }
+  gap: 5px;
 
   @include vp-767 {
-    gap: 0.3%;
+    gap: 3px;
   }
 }
 
@@ -110,40 +107,37 @@
   display: flex;
   flex-direction: column;
   width: auto;
-  gap: 0.3vw;
-
-  @include vp-1199 {
-    gap: 0.7vw;
-  }
+  gap: 5px;
 
   img {
     object-fit: fill;
+  }
 
-    @include vp-767 {
-      width: 100%;
-      height: 100%;
+  &:nth-child(2n -1) {
+    img {
+      height: 449px;
     }
   }
 
   @include vp-767 {
-    gap: 0.1%;
+    gap: 3px;
 
     &:nth-child(2n -1) {
       img {
-        width: 50vw;
-        height: 81vw;
+        width: 159px;
+        height: 259px;
       }
     }
 
     &:nth-child(2n) {
       picture {
-        width: 54vw;
-        height: 32vw;
+        width: 172px;
+        height: 103px;
       }
 
       .gallery__bottom {
-        width: 54vw;
-        height: 48.6vw;
+        width: 172px;
+        height: 153px;
       }
     }
   }

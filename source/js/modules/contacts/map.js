@@ -1,4 +1,5 @@
 const addContactsMap = () => {
+  let ymaps;
   if (document.querySelector('#map')) {
     document.querySelector('#map').querySelector('picture').remove();
     ymaps.ready(function () {

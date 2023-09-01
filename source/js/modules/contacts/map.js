@@ -1,3 +1,5 @@
+let ymaps = window.ymaps;
+
 const addContactsMap = () => {
   if (document.querySelector('#map')) {
     document.querySelector('#map').querySelector('picture').remove();

@@ -44,7 +44,7 @@ window.addEventListener('DOMContentLoaded', () => {
     addReviewsSlider();
     addAdvantagesSlider();
     addGallerySlider();
-    addContactsMap();
+    // addContactsMap();
   });
 });
 

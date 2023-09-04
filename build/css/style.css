@@ -3945,7 +3945,7 @@ button,
 }
 .advantages > picture {
   position: absolute;
-  top: 11px;
+  top: -50px;
   right: 0;
   z-index: -1;
 }

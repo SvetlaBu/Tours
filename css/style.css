@@ -1527,9 +1527,9 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1210px;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 0 5px;
+  padding: 0 8.3%;
 }
 
 .action {
@@ -2089,8 +2089,8 @@ button,
 .hero__info h2 {
   margin: 0 0 23px;
   font-weight: 800;
-  font-size: 77px;
-  line-height: 77px;
+  font-size: 5.3vw;
+  line-height: 1;
 }
 
 .hero__info p {
@@ -3090,7 +3090,7 @@ button,
 
 .advantages > picture {
   position: absolute;
-  top: 11px;
+  top: -50px;
   right: 0;
   z-index: -1;
 }
@@ -3181,7 +3181,7 @@ button,
 }
 
 .gallery__title {
-  margin: 0 0 24px;
+  margin: 0 0 14px;
 }
 
 .gallery__top {
@@ -3191,7 +3191,7 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin: 0 0 45px;
+  margin: 0 0 25px;
 }
 
 .gallery__info {
@@ -3203,7 +3203,9 @@ button,
 }
 
 .gallery__arrows {
-  margin: 6px 0 0;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 .gallery__slider {
@@ -3414,6 +3416,7 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  font-size: 1.12vw;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -4182,11 +4185,13 @@ button,
   }
 
   .gallery__title {
-    margin: 0 0 23px;
+    margin: 0 0 10px;
   }
 
   .gallery__top {
-    margin: 0 0 37px;
+    margin: 0 0 20px;
+    font-size: 14px;
+    line-height: 22px;
   }
 
   .gallery__info {
@@ -4199,7 +4204,9 @@ button,
   }
 
   .gallery__arrows {
-    margin: 14px 0 0;
+    margin: 26px 0 0;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
   }
 
   .gallery__slider {
@@ -4308,6 +4315,7 @@ button,
   }
 
   .footer__top {
+    font-size: inherit;
     margin: 0 0 37px;
   }
 
@@ -4787,7 +4795,7 @@ button,
   }
 
   .gallery__title {
-    margin: 0 0 14px;
+    margin: 0 0 2px;
   }
 
   .gallery__top {
@@ -4798,12 +4806,14 @@ button,
     -webkit-box-pack: stretch;
     -ms-flex-pack: stretch;
     justify-content: stretch;
+    font-size: 12px;
+    line-height: 18px;
     margin: 0 0 15px;
   }
 
   .gallery__info {
     max-width: 100%;
-    margin: 0 0 15px;
+    margin: 0 0 2px;
   }
 
   .gallery__body-text p {

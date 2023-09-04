@@ -62,8 +62,8 @@
         <section class="hero">
           <h1 class="visually-hidden">Уникальные маршруты путешествий по горам России.</h1>
           <div class="hero__slider swiper">
-            <div class="hero__list swiper-wrapper">
-              <section class="hero__item swiper-slide">
+            <ul class="hero__list swiper-wrapper">
+              <li class="hero__item swiper-slide">
                 <div class="hero__content container">
                   <div class="hero__info">
                     <h2>Захватывающие вершины Кавказа</h2>
@@ -104,8 +104,8 @@
                   <source media="(max-width: 1199px)" srcset="./img/peaks-tablet.jpg, ./img/peaks-tablet.jpg 2x" width="768" height="1024">
                   <img src="./img/peaks-desktop.jpg" srcset="./img/peaks-desktop@2x.jpg 2x" width="1440" height="800" alt="Фон: верхушки гор под синим небом.">
                 </picture>
-              </section>
-              <section class="hero__item swiper-slide">
+              </li>
+              <li class="hero__item swiper-slide">
                 <div class="hero__content container">
                   <div class="hero__info">
                     <h2>Невероятная природа Камчатки</h2>
@@ -143,8 +143,8 @@
                   <source media="(max-width: 1199px)" srcset="./img/kamchatka-tablet.jpg, ./img/kamchatka-tablet.jpg 2x" width="768" height="1024">
                   <img src="./img/kamchatka-desktop.jpg" srcset="./img/kamchatka-desktop@2x.jpg 2x" width="1440" height="800" alt="Фон: большая гора с заснеженной верхушкой и клубами тумана у подножия." loading="lazy">
                 </picture>
-              </section>
-              <section class="hero__item swiper-slide">
+              </li>
+              <li class="hero__item swiper-slide">
                 <div class="hero__content container">
                   <div class="hero__info">
                     <h2>Магические пейзажи Алтайского Края</h2>
@@ -186,7 +186,7 @@
                     </div>
                     <div class="audio__slider">
                       <span class="audio__passed-line" style="width: 56.5%;">
-                        <button class="audio__point" type="button" aria-label="Выбрать время воспроизведения."></button></span>
+                        <button class="audio__point" type="button" aria-label=""></button></span>
                     </div>
                     <div class="audio__metadata">
                       <span class="audio__passed">2:30</span>
@@ -231,8 +231,8 @@
                   <source media="(max-width: 1199px)" srcset="./img/altai-tablet.jpg, ./img/altai-tablet.jpg 2x" width="768" height="1024">
                   <img src="./img/altai-desktop.jpg" srcset="./img/altai-desktop@2x.jpg 2x" width="1440" height="800" alt="Фон: высокие горы с зелеными долинами и извилистой рекой у подножия." loading="lazy">
                 </picture>
-              </section>
-            </div>
+              </li>
+            </ul>
             <div class="hero__pagination container"></div>
           </div>
         </section>
@@ -494,7 +494,7 @@
           </div>
           <picture class="tours__background tours__background--left" aria-hidden="true">
             <source type="image/webp" srcset="./img/cloud.webp, ./img/cloud@2x.webp 2x" width="418" height="279">
-            <img src="./img/cloud.png" srcset="./img/cloud@2x.png 2x" width="418" height="279" alt="Облако." loading="lazy">
+            <img src="./img/cloud.png" srcset="./img/clouds@2x.png 2x" width="418" height="279" alt="Облако." loading="lazy">
           </picture>
           <picture class="tours__background">
             <source type="image/webp" media="(max-width: 767px)" srcset="./img/clouds-mobile.webp, ./img/clouds-mobile@2x.webp 2x" width="176" height="595">
@@ -1095,7 +1095,7 @@
         </div>
       </footer>
     </div>
-    <script nonce src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=523d7e5a-cab5-40a2-aff3-4c809b574a0e"></script>
-    <script defer src="js/main.min.js"></script>
+    <script acync src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=523d7e5a-cab5-40a2-aff3-4c809b574a0e"></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>

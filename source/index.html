@@ -491,19 +491,19 @@
                 <use href="./img/sprite.svg#right"></use>
               </svg>
             </a>
+            <picture class="tours__background tours__background--left" aria-hidden="true">
+              <source type="image/webp" srcset="./img/cloud.webp, ./img/cloud@2x.webp 2x" width="418" height="279">
+              <img src="./img/cloud.png" srcset="./img/clouds@2x.png 2x" width="418" height="279" alt="Облако." loading="lazy">
+            </picture>
+            <picture class="tours__background">
+              <source type="image/webp" media="(max-width: 767px)" srcset="./img/clouds-mobile.webp, ./img/clouds-mobile@2x.webp 2x" width="176" height="595">
+              <source type="image/webp" media="(max-width: 1199px)" srcset="./img/clouds-tablet.webp, ./img/clouds-tablet@2x.webp 2x" width="294" height="1364">
+              <source type="image/webp" srcset="./img/clouds.webp, ./img/clouds@2x.webp 2x" width="602" height="1364">
+              <source media="(max-width: 767px)" srcset="./img/clouds-mobile.png, ./img/clouds-mobile@2x.png 2x" width="176" height="595">
+              <source media="(max-width: 1199px)" srcset="./img/clouds-tablet.png, ./img/clouds-tablet@2x.png 2x" width="294" height="1364">
+              <img src="./img/clouds.png" srcset="./img/clouds@2x.png 2x" width="602" height="1364" alt="Фон: Вид на горы сквозь облака." loading="lazy">
+            </picture>
           </div>
-          <picture class="tours__background tours__background--left" aria-hidden="true">
-            <source type="image/webp" srcset="./img/cloud.webp, ./img/cloud@2x.webp 2x" width="418" height="279">
-            <img src="./img/cloud.png" srcset="./img/clouds@2x.png 2x" width="418" height="279" alt="Облако." loading="lazy">
-          </picture>
-          <picture class="tours__background">
-            <source type="image/webp" media="(max-width: 767px)" srcset="./img/clouds-mobile.webp, ./img/clouds-mobile@2x.webp 2x" width="176" height="595">
-            <source type="image/webp" media="(max-width: 1199px)" srcset="./img/clouds-tablet.webp, ./img/clouds-tablet@2x.webp 2x" width="294" height="1364">
-            <source type="image/webp" srcset="./img/clouds.webp, ./img/clouds@2x.webp 2x" width="602" height="1364">
-            <source media="(max-width: 767px)" srcset="./img/clouds-mobile.png, ./img/clouds-mobile@2x.png 2x" width="176" height="595">
-            <source media="(max-width: 1199px)" srcset="./img/clouds-tablet.png, ./img/clouds-tablet@2x.png 2x" width="294" height="1364">
-            <img src="./img/clouds.png" srcset="./img/clouds@2x.png 2x" width="602" height="1364" alt="Фон: Вид на горы сквозь облака." loading="lazy">
-          </picture>
         </section>
         <section class="training" id="training">
           <div class="training__container container">
@@ -1095,7 +1095,6 @@
         </div>
       </footer>
     </div>
-    <script acync src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=523d7e5a-cab5-40a2-aff3-4c809b574a0e"></script>
     <script defer src="js/main.min.js"></script>
   </body>
 </html>

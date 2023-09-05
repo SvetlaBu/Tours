@@ -7,6 +7,10 @@
   list-style-type: none;
   gap: 5px 23px;
 
+  @include vp-1919 {
+    margin: 1px 0 0 0;
+  }
+
   @include vp-1199 {
     margin: 0 1px 6px 0;
     gap: 5px 11px;

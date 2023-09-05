@@ -30,6 +30,7 @@
 .tours__container {
   padding-top: 123px;
   padding-bottom: 62px;
+  position: relative;
 
   @include vp-1199 {
     padding-top: 83px;

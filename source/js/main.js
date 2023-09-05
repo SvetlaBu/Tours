@@ -11,7 +11,7 @@ import {addInstructorsSlider} from './modules/coaches/slider';
 import {addReviewsSlider} from './modules/reviews/slider';
 import {addAdvantagesSlider} from './modules/advantages/slider';
 import {addGallerySlider} from './modules/gallery/slider';
-import {addContactsMap} from './modules/contacts/map';
+import {addContactsMap} from './modules/contacts/map2';
 import {getHeight} from './modules/hero/indent';
 
 // ---------------------------------

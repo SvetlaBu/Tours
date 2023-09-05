@@ -12,6 +12,7 @@ const addHeroSlider = () => {
           return `<button class="hero__pagination-button ${className} type="button" aria-label="Перейти к ${index + 1} слайду"></button>`;
         },
       },
+      loop: true,
     });
   }
   return null;

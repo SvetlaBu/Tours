@@ -2160,8 +2160,8 @@ button,
       align-content: flex-start;
   padding-top: 142px;
   padding-bottom: 80px;
-  -ms-grid-columns: 1fr auto;
-  grid-template-columns: 1fr auto;
+  -ms-grid-columns: 1fr 40%;
+  grid-template-columns: 1fr 40%;
 }
 @media (max-width: 1199px) {
   .hero__content {
@@ -2244,7 +2244,7 @@ button,
 .hero__info h2 {
   margin: 0 0 23px;
   font-weight: 800;
-  font-size: 5.3vw;
+  font-size: 77px;
   line-height: 1;
 }
 @media (max-width: 1199px) {
@@ -2481,7 +2481,6 @@ button,
   position: relative;
 }
 .video img {
-  height: 317px;
   -o-object-fit: cover;
      object-fit: cover;
 }

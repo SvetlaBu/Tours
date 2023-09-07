@@ -17,6 +17,8 @@ import {getHeight} from './modules/hero/indent';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
+  addAudioPlayer();
+  addHeroSlider();
 
   // Utils
   // ---------------------------------
@@ -34,11 +36,8 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
 
     getHeight();
-
     addToggleMenu();
-    addHeroSlider();
     addVideoPlayer();
-    addAudioPlayer();
     addToursSlider();
     addInstructorsSlider();
     addReviewsSlider();

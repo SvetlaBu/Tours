@@ -112,6 +112,7 @@
   margin-top: 3px;
   margin-right: 1px;
   gap: 5px 0;
+  flex: 1 0 auto;
 
   @include vp-1199 {
     max-width: 55%;

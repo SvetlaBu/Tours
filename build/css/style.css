@@ -2658,6 +2658,9 @@ button,
   margin-top: 3px;
   margin-right: 1px;
   gap: 5px 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 @media (max-width: 1199px) {
   .header__right {
@@ -3614,9 +3617,9 @@ button,
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  min-width: 380px;
+  min-width: 30%;
   min-height: 412px;
-  height: 100%;
+  height: auto;
   color: #ffffff;
 }
 .tours__item::before {
@@ -3649,14 +3652,12 @@ button,
 @media (min-width: 1919px) {
   .tours__item img {
     width: 100%;
-    height: auto;
   }
 }
 @media (max-width: 1199px) {
   .tours__item {
     min-width: 324px;
     min-height: 412px;
-    height: 100%;
   }
   .tours__item img {
     width: 100%;
@@ -3733,7 +3734,10 @@ button,
   font-weight: 500;
   font-size: 12px;
   line-height: 12px;
-  gap: 10px 36px;
+  gap: 10px 1%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media (max-width: 1199px) {
   .tours__first {
@@ -3853,7 +3857,10 @@ button,
   font-weight: 300;
   font-size: 12px;
   line-height: 12px;
-  gap: 10px 53px;
+  gap: 10px 1%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media (max-width: 1199px) {
   .tours__detalis-bottom {
@@ -4334,6 +4341,12 @@ button,
 .coaches__item picture {
   margin: 0 0 16px;
 }
+@media (min-width: 1919px) {
+  .coaches__item picture {
+    width: 100%;
+    height: 100%;
+  }
+}
 @media (max-width: 767px) {
   .coaches__item picture {
     height: 100%;
@@ -4345,6 +4358,12 @@ button,
   height: 212px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (min-width: 1919px) {
+  .coaches__item {
+    width: 100%;
+    height: 100%;
+  }
 }
 @media (max-width: 1199px) {
   .coaches__item {
@@ -4432,13 +4451,6 @@ button,
 
 .about {
   position: relative;
-  background-color: #ffffff;
-}
-@media (min-width: 1919px) {
-  .about {
-    max-width: 1440px;
-    margin: 0 auto;
-  }
 }
 
 .about__background {
@@ -4447,7 +4459,7 @@ button,
   max-width: 808px;
   top: 26px;
   left: 0;
-  z-index: 1;
+  z-index: -1;
 }
 .about__background--right {
   top: -140px;
@@ -4511,12 +4523,6 @@ button,
 
 .about__content {
   max-width: calc(41vw - 5px);
-  z-index: 2;
-}
-@media (min-width: 1919px) {
-  .about__content {
-    max-width: 40%;
-  }
 }
 @media (max-width: 1199px) {
   .about__content {
@@ -5603,6 +5609,9 @@ button,
   max-width: 170px;
   margin-top: 2px;
   gap: 5px 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 @media (max-width: 1199px) {
   .footer__right {

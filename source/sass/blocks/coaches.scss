@@ -85,6 +85,11 @@
   picture {
     margin: 0 0 16px;
 
+    @include vp-1919 {
+      width: 100%;
+      height: 100%;
+    }
+
     @include vp-767 {
       height: 100%;
       margin: 0;
@@ -95,6 +100,11 @@
     width: 238px;
     height: 212px;
     object-fit: cover;
+  }
+
+  @include vp-1919 {
+    width: 100%;
+    height: 100%;
   }
 
   @include vp-1199 {

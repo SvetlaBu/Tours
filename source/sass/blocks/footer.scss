@@ -68,6 +68,7 @@
   max-width: 170px;
   margin-top: 2px;
   gap: 5px 0;
+  flex: 1 0 auto;
 
   @include vp-1199 {
     display: none;

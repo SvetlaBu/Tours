@@ -3005,6 +3005,11 @@ button,
   -ms-grid-column-span: 1;
   grid-area: 1/1/2/2;
 }
+@media (min-width: 1919px) {
+  .hero__info {
+    max-width: 800px;
+  }
+}
 @media (max-width: 1199px) {
   .hero__info {
     display: -webkit-box;

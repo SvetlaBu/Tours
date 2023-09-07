@@ -1,8 +1,6 @@
 import Swiper from '../../vendor/swiper';
 import {isMobile} from '../../utils/is-mobile';
 
-let slide = document.querySelector('.hero__item');
-
 const addHeroSlider = () => {
   if (document.querySelector('.hero__slider')) {
     const swiper = new Swiper('.hero__slider', {

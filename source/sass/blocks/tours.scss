@@ -6,7 +6,6 @@
   position: absolute;
   top: -18px;
   right: 0;
-  z-index: -1;
 
   &--left {
     top: auto;
@@ -30,7 +29,7 @@
 .tours__container {
   padding-top: 123px;
   padding-bottom: 62px;
-  position: relative;
+  background-color: $color-default-white;
 
   @include vp-1199 {
     padding-top: 83px;
@@ -48,6 +47,8 @@
   justify-content: space-between;
   align-items: end;
   margin: 0 0 54px;
+  z-index: 1;
+  position: relative;
 
   @include vp-1199 {
     margin: 0 0 43px;
@@ -93,6 +94,7 @@
   justify-content: flex-end;
   min-width: 380px;
   min-height: 412px;
+  height: 100%;
   color: $color-default-white;
 
   &::before {
@@ -105,13 +107,22 @@
 
   picture {
     z-index: -2;
+    height: 100%;
+    width: 100%;
+    flex-grow: 1;
   }
 
   img {
     width: 380px;
     min-height: 412px;
     height: 100%;
-    object-fit: cover;
+    flex-grow: 1;
+    object-fit: fill;
+
+    @include vp-1919 {
+      width: 100%;
+      height: auto;
+    }
   }
 
   @include vp-1199 {
@@ -132,10 +143,15 @@
 }
 
 .tours__detalis {
-  position: absolute;
+  position: relative;
   display: flex;
   flex-direction: column;
   padding: 28px 20px;
+  margin-top: -232px;
+
+  @include vp-767 {
+    margin-top: -242px;
+  }
 }
 
 .tours__header {
@@ -344,6 +360,8 @@
   text-transform: uppercase;
   letter-spacing: 0.64px;
   gap: 0 12px;
+  position: relative;
+  z-index: 1;
 
   @include vp-767 {
     font-size: 14px;

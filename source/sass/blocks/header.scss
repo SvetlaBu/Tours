@@ -10,6 +10,7 @@
   padding-bottom: 40px;
   color: $color-default-white;
   transition: color $trans-default;
+  gap: 10px 10px;
 
   &::before {
     content: "";

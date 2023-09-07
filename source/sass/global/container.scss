@@ -4,6 +4,10 @@
   margin: 0 auto;
   padding: 0 $padding-desktop;
 
+  @include vp-1919 {
+    padding: 123px 1% 0;
+  }
+
   @include vp-1199 {
     padding: 0 $padding-tablet;
   }

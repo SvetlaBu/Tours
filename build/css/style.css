@@ -5342,7 +5342,7 @@ button,
 }
 
 .contacts__info {
-  margin: 0 0 49px;
+  margin: 0 0 52px;
 }
 @media (max-width: 1199px) {
   .contacts__info {
@@ -5546,7 +5546,7 @@ button,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 16px;
+  font-size: 1.12vw;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -5555,7 +5555,7 @@ button,
 }
 @media (max-width: 1199px) {
   .footer__top {
-    font-size: inherit;
+    font-size: 16px;
     margin: 0 0 37px;
   }
 }

@@ -22,13 +22,13 @@
 .footer__top {
   display: flex;
   justify-content: space-between;
-  font-size: 16px;
+  font-size: 1.12vw;
   align-items: center;
   margin: 0 0 16px;
   gap: 0 25px;
 
   @include vp-1199 {
-    font-size: inherit;
+    font-size: 16px;
     margin: 0 0 37px;
   }
 

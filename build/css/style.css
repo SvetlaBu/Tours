@@ -3623,6 +3623,7 @@ button,
   inset: 0;
 }
 .tours__item picture {
+  position: absolute;
   z-index: -2;
   height: 100%;
   width: 100%;
@@ -3665,7 +3666,6 @@ button,
 }
 
 .tours__detalis {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3674,7 +3674,6 @@ button,
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 28px 20px;
-  margin-top: -232px;
 }
 @media (max-width: 767px) {
   .tours__detalis {

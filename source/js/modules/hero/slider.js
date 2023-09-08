@@ -18,12 +18,10 @@ const addHeroSlider = () => {
       if (document.querySelector('iframe')) {
         let iframes = document.querySelectorAll('iframe');
         for (let i = 0; i < iframes.length; i++) {
-          if (iframes[i] !== null) {
-            let temp = iframes[i].src;
-            iframes[i].src = temp;
-          }
+          iframes.remove();
         }
       }
+      swiper.update();
     });
   }
   return null;

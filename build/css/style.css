@@ -2636,7 +2636,7 @@ button,
 }
 
 .header__nav {
-  margin-top: 1px;
+  margin: 1px 0 0 28px;
 }
 @media (max-width: 1199px) {
   .header__nav {
@@ -4354,10 +4354,16 @@ button,
   }
 }
 .coaches__item img {
-  width: 100%;
-  height: 100%;
+  width: 380px;
+  height: 212px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (min-width: 1919px) {
+  .coaches__item img {
+    width: 100%;
+    height: 100%;
+  }
 }
 @media (min-width: 1919px) {
   .coaches__item {
@@ -5664,7 +5670,7 @@ button,
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 710px;
-  margin: 1px 64px 0 0;
+  margin: 1px 35.5px 0 0;
   padding: 0;
   list-style-type: none;
   gap: 5px 23px;

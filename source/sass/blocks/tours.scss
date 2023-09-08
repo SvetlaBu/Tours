@@ -138,6 +138,7 @@
   @include vp-767 {
     min-width: 290px;
     max-width: 540px;
+    aspect-ratio: 290/412;
   }
 }
 
@@ -202,6 +203,7 @@
 
   @include vp-767 {
     justify-content: start;
+    width: 200px;
     margin: 0 0 15px;
     gap: 15px 17px;
   }

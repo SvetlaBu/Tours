@@ -3668,6 +3668,7 @@ button,
   .tours__item {
     min-width: 290px;
     max-width: 540px;
+    aspect-ratio: 290/412;
   }
 }
 
@@ -3749,6 +3750,7 @@ button,
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
+    width: 200px;
     margin: 0 0 15px;
     gap: 15px 17px;
   }

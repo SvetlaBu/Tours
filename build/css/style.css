@@ -4354,8 +4354,8 @@ button,
   }
 }
 .coaches__item img {
-  width: 238px;
-  height: 212px;
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -5672,6 +5672,7 @@ button,
 @media (min-width: 1919px) {
   .menu {
     margin: 1px 0 0 0;
+    font-size: 16px;
   }
 }
 @media (max-width: 1199px) {

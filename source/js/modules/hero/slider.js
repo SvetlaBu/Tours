@@ -13,6 +13,8 @@ const addHeroSlider = () => {
         },
       },
       loop: true,
+      observeSlideChildren: true,
+      observer: true,
     });
     swiper.on('slideChange', function () {
       if (document.querySelector('iframe')) {
@@ -23,6 +25,11 @@ const addHeroSlider = () => {
             iframes[i].src = temp;
           }
         }
+      }
+      if (document.getElementById('iframe')) {
+        let app = document.getElementById('iframe');
+        document.getElementById('iframe').src = app.src;
+        swiper.updateSlides();
       }
     });
   }
